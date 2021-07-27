@@ -4,7 +4,7 @@
     padding:0;
 }
 
-    @import "operaciones";
+
 
 /* mobile first */
 
@@ -27,7 +27,7 @@
     .lNav{
         font-family: Roboto Slab,arial,serif;
         color:white;
-        font-size: $font-size + 21;
+        font-size: 35px;
     }
 
 
@@ -68,7 +68,7 @@
     .nPrincipal__h2--propiedades{
         color: white;
         margin: 0px;
-        font-size:(($font-size)*2)+2;
+        font-size: 30px;
     }
 
 
@@ -89,7 +89,7 @@
 
     .card h2{
         line-height: 17px;
-        font-size:(($font-size)*2)-12;
+        font-size: 16px;
     }
 
     .nav-link{
@@ -124,7 +124,7 @@
 
     .pie i{
         color: white;
-        font-size: ((($font-size)/2)*5)-5;
+        font-size: 30px;
         padding: 10px;
     }
  
