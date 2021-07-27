@@ -1,0 +1,2279 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0;
+}
+
+    @import "operaciones";
+
+/* mobile first */
+
+@media only screen and (max-width:768px){
+   
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding:0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        list-style-type: none;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        font-family: Roboto Slab, arial,serif;
+        font-size: 20px;
+    }
+    
+    .lNav{
+        font-family: Roboto Slab,arial,serif;
+        color:white;
+        font-size: $font-size + 21;
+    }
+
+
+    .wNav{
+        width: 100vw;
+        box-shadow: 0px 0px 10px grey;
+    }
+
+    .nav__secundaria--display{
+        display: none;
+    }
+    
+
+    .Publicidad__div--heigth{
+        height: 120px;
+    }
+
+    .Publicidad__a--size{
+        height: 100px;
+        width: 100%;
+    }
+
+    .Publicidad__a--background{
+        background: url(https://www.totalmedios.com/img/noticias/2021/05/6091359308f81__838x390.jpg) no-repeat center;
+        background-size: cover;
+    }
+    
+    .nPrincipal__div--background{
+        background: url(https://media.tycsports.com/files/2021/07/11/305466/argentina-formacion_1440x810_wmk.jpg?v=1) no-repeat center;
+        background-size: cover;
+    }
+
+    .nPrincipal__div--size{
+        width: 100%;
+        height: 400px;
+    }
+
+    .nPrincipal__h2--propiedades{
+        color: white;
+        margin: 0px;
+        font-size:(($font-size)*2)+2;
+    }
+
+
+    .card{
+        margin-top: 15px;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 4px;
+        border:none;
+    }
+
+
+
+    .card p{
+        font-size: 14px;
+        color: black;
+        line-height: 14px;
+    }
+
+    .card h2{
+        line-height: 17px;
+        font-size:(($font-size)*2)-12;
+    }
+
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .bg{
+        background-color:rgb(15, 51, 134)
+    }
+    
+
+    .tsize{
+        width: 100%;
+        height: auto;
+    }
+
+    .pie{
+        background-color: rgb(14, 51, 134);
+        color: white;
+        text-align: center;
+        width: 100vw;
+        position: absolute;
+        bottom:fixed;
+    }
+
+    .pie ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:0px;
+    }
+
+    .pie i{
+        color: white;
+        font-size: ((($font-size)/2)*5)-5;
+        padding: 10px;
+    }
+ 
+    /* inicio sesión */
+
+     div.inicioSesión{
+        width: 100vw;
+        height:100vh;
+        background-color: white;
+        padding:20px;
+        margin:auto;
+        border-radius:5px;
+        text-align: center;
+    }
+    
+    .loginText{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 20px;
+    }
+
+    .form__button--propiedades{
+        width: 100%;
+        padding:10px;
+        text-align:center;
+        background-color:white;
+        border: solid 1px #ccc;
+        border-radius:4px;
+    }
+
+    
+
+    input[type=password]{
+        width: 100%;
+        height: 40px; 
+        border: solid 1px #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+     
+  
+    
+    input[type=password]:focus{
+        border:1px solid #1048b2;
+        outline: none;
+        
+    }
+    
+    input[type=email]{
+        width: 100%;
+        height: 40px; 
+        border: solid 1px #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+
+    input[type=email]:focus{
+        border:1px solid #1048b2;
+        outline: none;
+    }
+
+
+    input[type=submit]{
+        width: 100%;
+        padding: 5px 12px;
+        background-color:  #1048b2;
+        border:solid 1px #1048b2;
+        border-radius: 4px;
+        color:white;   
+    }
+
+    input:focus[type=submit]{
+        cursor:pointer;
+    }
+
+    a.olvide{
+        color: #00b4ff;
+        text-decoration:none;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    
+
+    a.olvide:focus{
+        color:black;
+    }
+
+    .recordarOlvidar{
+        display: flex;
+    }
+
+    .olvideMobile{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div.check {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .check input{
+        margin-right: 5px;
+    }
+
+    a.ingresar{
+        color: #00b4ff;
+        text-decoration:none;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    a.ingresar:focus{
+        color:black;
+    }
+
+    a.logo h1{
+        color:#1048b2;
+        text-decoration: none;
+        font-family: Roboto Slab,Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    .logo{
+        text-decoration: none;
+    }
+   
+    span{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+  
+    input[placeholder="Contraseña *"]{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    input[placeholder="E-mail *"]{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    span.footer{
+        font-size: 12px;
+    }
+
+    input{
+        font-family: Roboto, Arial, sans-serif;
+        font-size:16px;
+    }
+
+    .form__button--propiedades{
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    .fa-facebook-f{
+        color:#1048b2;
+        margin-right: 10px;
+    }
+
+    .fa-google{
+        color:#00b4ff;
+        margin-right: 10px;
+    }    
+
+    /* registrarse */
+    
+   
+
+     div.contenedor{
+        width: 100vw;
+        height: 100vh;
+        background-color:white;
+        border-radius: 4px;
+        margin:auto;
+        text-align:center;
+        padding:20px;
+
+    }
+
+
+    h2.registrar b{
+        font-size: 20px;
+        font-family: Roboto,arial,sans-serif; 
+    }
+
+    span{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    a.registrarse{
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+    }
+
+
+    .form__button--propiedades{
+        width: 100%;
+        font-size: 12px;
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+        padding:5px 12px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        background-color:white;
+    }
+
+    .form__button--propiedades{
+        border: 1px solid #1048b2;
+    }
+
+    input[placeholder="Email *"]{
+        font-family: Roboto, arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+
+
+    input:hover{
+        border: 1px solid #1048b2;
+    }
+
+    .registrarme{
+        border: 1px solid #1048b2;
+        background-color:#1048b2;
+        color:white;
+        padding: 5px 12px
+    }
+
+    .fa-facebook-f{
+        color:#1048b2;
+        margin-right:10px;
+    }
+
+    .fa-google{
+        color: #00b4ff;
+        margin-right:10px;
+    }
+
+    a.registrarse{
+        text-decoration:none;
+        color: #00b4ff;
+    }
+
+    a.registrarse:hover{
+        color:black;
+    }
+
+    a.logo h1{
+        color:#1048b2;
+        font-family: Roboto Slab,Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        text-decoration: none;
+    } 
+
+
+    /* fin registrarse */
+
+    
+    /* restablecer */
+   
+    
+    
+      div.restablecer{
+        width: 100vw;
+        height: 100vh;
+        background-color:white;
+        border-radius: 4px;
+        margin: auto;
+        text-align:center;
+        padding:30px;
+      }
+  
+      input[placeholder="correo electrónico *"]{
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Roboto, arial, sans-serif;
+        font-size: 16px;
+        font-weight:300;
+        height: 40px;
+        transition: 0.5s;
+      }
+  
+      input:hover{
+        border: 1px solid #1048b2;
+      }
+  
+      .butRes{
+        width:100%;
+        border:1px solid #1048b2;
+        border-radius: 4px;
+        font-family:Roboto, arial, sans-serif;
+        font-size: 16px;
+        padding: 5px 12px;
+        background-color:#1048b2;
+        color:white;
+      }
+  
+      .butRes:hover{
+        cursor: pointer;
+        outline: none;  
+        border:1px solid #1048b2;
+      }
+  
+      span{
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+      }
+  
+     
+      a.logo h1{
+        font-family: Roboto Slab, aril, serif;
+        font-size: 30px;
+        color:#1048b2;
+      }
+
+      
+  
+      .restablecerText{
+          font-family: Roboto,arial,sans-serif;
+      } 
+  
+      /* fin restablecer */
+
+    /* contacto */
+    .backCon{
+        background-color: #fefefe;
+    }
+    
+    .headerConPri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(14, 51, 134,1);
+        height: auto;
+    }
+    
+    .headerConPri a{
+        color:white;
+        text-decoration: none;
+    }
+    
+    .headerConPri a h1{
+        font-family: Roboto Slab,Arial,serif;
+        font-size: 30px;
+    }
+    
+    .headerConSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(14, 51, 134, 0.5);
+        color: white;
+        width:100%;
+        height: 200px;
+        
+    }
+    
+    .headerConSec h2{
+        font-size: 30px;
+    }
+    
+    .pHeaderSec{
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .headerCon{
+        background:url(https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
+        background-size:cover;
+    }
+    
+   
+
+    .formCon{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+    }
+
+    .infoCon{
+        width:100%;
+        height:400px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: space-evenly;
+      
+    }
+
+    input[placeholder="Nombre"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Nombre"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+    
+    input[placeholder="Apellido"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Apellido"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+
+    input[placeholder="Teléfono"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Teléfono"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+
+    .emailCon{
+        width: 100%;
+        border:none !important;
+        border-bottom: 3px solid #efefef !important; 
+        color: #afafaf;
+    }
+
+    .emailCon:focus{
+        border:none;
+        outline:none;
+        border-radius: 0px  !important;
+        border-bottom: 3px solid rgb(15, 51, 134) !important;
+        color:black
+    }
+
+    .sendCon{
+        width: 100px !important;
+        background-color: white !important; 
+        color: rgb(15, 51, 134) !important;
+        transition: 0.3s;
+        margin-top: 20px;
+    }
+    
+    .textareaCon{
+        width: 100%;
+        border: 3px solid #efefef;
+        resize: none;
+    }
+    
+    .textareaCon:focus{
+        width: 100%;
+        border: 3px solid rgb(15,51,134);
+        outline: none;
+    }
+
+
+    .sendCon:hover{
+        width: 100px !important;
+        background-color: rgb(15, 51, 134) !important; 
+        color: white !important;
+    }
+
+    .textCon{
+        font-size: 14px;
+    }
+
+    .textCon i{
+        font-size: 30px;
+        color: rgb(15,51,134);
+    }
+
+    span iframe{
+        width: 100%;
+        height: auto;
+    } 
+
+    /* fin contacto */    
+    /* estadísticas */
+    
+    .headerEst{
+        width: 100%;
+        height: auto;
+        background-color: rgb(15,51,134);
+    }
+
+    .headerEst h1{
+        color: white;
+        font-family: Roboto Slab, arial, serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .headerEst a{
+        text-decoration: none;
+    }
+
+    .flexEst{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .flexEst h2{
+        text-align: center;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    
+    .grupoA{
+        color: black;
+        border: none;
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    table.grupoA caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .grupoA .par{
+        height: 40px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }
+
+
+    .grupoA td{
+        height: 40px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    table.grupoB caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 18px;
+        width: 100%;
+    }
+
+
+    .grupoB{
+        text-align: center;
+        border:none;
+        padding: 0px;
+        margin-bottom:50px;
+        width: 100%;
+    }
+
+    .grupoB .par{
+        height: 40px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }
+
+    
+    .grupoB td{
+        height: 40px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .datosCompetición{
+        text-align: center;
+        background-color: white;
+        color: black;
+        border: none;
+        margin-bottom: 50px;
+        width:100%;
+    }
+
+    table.datosCompetición caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .datosCompetición tr th{
+        border: none;
+        font-weight: bold;
+    }
+
+    .datosCompetición td{
+        border:none;
+        color: rgb(15, 51, 134);
+    }
+   
+   
+
+    table.goleadores{
+        width: auto;
+        border:none;
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+    table.goleadores caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    
+    .goleadores th{
+        border: none;
+    }
+
+    .goleadores td{
+        border: none;
+        text-align: center;
+
+    }
+
+    .parGoleadores{
+        background-color: #efefef;
+    }
+
+
+    table.asistidores caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    table.asistidores{
+        width: 100%;
+        border: none;
+        margin-right: none;
+        margin-bottom:30px;
+    }
+    
+    .asistidores th{
+        border:none;
+    }
+
+    .asistidores td{
+        border: none;
+        text-align: center;
+    }
+
+    .parAsistidores{
+        background-color: #efefef;
+    }
+
+    .pieEst{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(15, 51, 134);
+        width: 100%;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .pieEst footer ul{
+        display: flex;
+    }
+
+    .pieEst footer i{
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+    }
+    /* fin estadísticas */
+    
+
+}
+
+
+  
+/* vista tablet and desktop */
+
+@media only screen and (min-width: 768px) {
+
+    *{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 16px;
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: Roboto Slab, arial,serif;
+        font-size: 18px;
+    }
+   
+    
+    .lNav{
+        font-family: Roboto Slab,arial,serif;
+        font-size: 50px;
+        color:white;
+    }
+
+   .wNav{
+       width: 100vw;
+       box-shadow: 0px 0px 10px grey;
+    }
+
+    .Publicidad__div--heigth{
+        height: 100px;
+    }
+
+    .Publicidad__a--size{
+        height: 100px;
+        width: 100%;
+    }
+
+    .Publicidad__a--background{
+        background: url(https://www.totalmedios.com/img/noticias/2021/05/6091359308f81__838x390.jpg) no-repeat center;
+        background-size: cover;
+    }
+
+     
+    .nPrincipal__div--background{
+        background: url(https://media.tycsports.com/files/2021/07/11/305466/argentina-formacion_1440x810_wmk.jpg?v=1) no-repeat;
+        background-size: cover;
+    }
+
+    .nPrincipal__div--size{
+        width: 100%;
+        height: 400px;
+    }
+
+    .nPrincipal__h2--propiedades{
+        color: white;
+        margin: 0px;
+        font-size:40px;
+    }
+
+
+    .fas{ 
+        margin-right: 10px;
+    }
+
+    
+    .card-img-top{
+        max-width: 100%;
+        min-width: auto;
+        max-height: 210px;
+        min-height: auto;
+    }
+
+    .armani, .alexis{
+        max-width:100%;
+        max-height: 210px;
+        min-width:auto;
+        min-height: auto;
+    }
+
+  
+    .card{
+        margin-top: 15px;
+        box-shadow: 0px 0px 10px grey;
+        border-radius: 4px;
+        border:none;
+    }
+  
+    .card p{
+        font-size: 14px;
+        color: black;
+        line-height: 17px;
+    }
+
+    .card h2{
+        line-height: 17px;
+        font-size: 18px;
+    }
+
+    .tsize{
+        width: 100%;
+        height: auto;
+    }
+
+    .pie{
+        background-color: rgb(14, 51, 134);
+        color: white;
+        text-align: center;
+        width: 100vw;
+        position: absolute;
+        bottom:fixed;
+    }
+
+    .pie ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding:0px;
+    }
+
+    .pie i{
+        color: white;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .footDerechos{
+        margin:none;
+    }
+
+    /* <!-- Inicio css de inicio sesión --> */
+
+
+    .fondoLogin{
+        background: url(https://images.pexels.com/photos/5553102/pexels-photo-5553102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500;) no-repeat center fixed;
+        background-size: cover;
+        background-origin: border-box;
+    }
+
+    .alignLogin{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    div.inicioSesión{
+        width: 400px;
+        height:800px;
+        background-color: white;
+        padding:20px;
+        margin:auto;
+        border-radius:5px;
+        text-align: center;
+    }
+    
+    .recordarOlvidar{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .olvideMobile{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div.check {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .check input{
+        position: relative;
+        top: 2px;
+    }
+
+    .check input{
+        margin-right: 5px;
+    }
+
+    .loginText{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 20px;
+    }
+
+    .form__button--propiedades{
+        width: 100%;
+        padding:10px;
+        text-align:center;
+        background-color:white;
+        border: solid 1px #ccc;
+        border-radius:4px;
+    }
+
+    
+    .form__button--propiedades:hover{
+        border:solid 1px #1048b2;
+        cursor: pointer;
+    }
+
+    input[type=password]{
+        width: 100%;
+        height: 40px; 
+        border: solid 1px #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+     
+    input[type=password]:hover{
+        border:1px solid #1048b2;
+    }
+    
+    input[type=password]:focus{
+        border:1px solid #1048b2;
+        
+    }
+    
+    input[type=email]{
+        width: 100%;
+        height: 40px; 
+        border: solid 1px #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+
+    input[type=email]:hover{
+        border:1px solid #1048b2;
+    }
+
+    input[type=email]:focus{
+        border: 1px solid #1048b2;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        padding: 5px 12px;
+        background-color:  #1048b2;
+        border:solid 1px #1048b2;
+        border-radius: 4px;
+        color:white;   
+    }
+
+    input:hover[type=submit]{
+        cursor:pointer;
+    }
+
+    a.olvide{
+        color: #00b4ff;
+        text-decoration:none;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    a.olvide:hover{
+        color:black;
+    }
+
+    div.check{
+        display: flex;
+        width: auto;
+    }
+
+    a.ingresar{
+        color: #00b4ff;
+        text-decoration:none;
+        font-family: Roboto, Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    a.ingresar:hover{
+        color:black;
+    }
+
+    a.logo h1{
+        color:#1048b2;
+        text-decoration: none;
+        font-family: Roboto Slab,Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+   
+    span{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+  
+    input[placeholder="Contraseña *"]{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    input[placeholder="E-mail *"]{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    span.footer{
+        font-size: 12px;
+    }
+
+    input{
+        font-family: Roboto, Arial, sans-serif;
+        font-size:16px;
+    }
+
+    button{
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+    }
+
+    .fa-facebook-f{
+        color:#1048b2;
+        margin-right: 10px;
+    }
+
+    .fa-google{
+        color:#00b4ff;
+        margin-right: 10px;
+    }  
+
+    /* <!-- Fin inicio sesión css --> */
+
+    /* registrarse */
+    
+     .fondoRegistrar{
+        background: url(https://images.pexels.com/photos/5553103/pexels-photo-5553103.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center fixed ;
+        background-size:cover;
+        background-origin: content-box;
+    }
+
+    .alignReg{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    div.contenedor{
+        width: 400px;
+        height: 700px;
+        background-color:white;
+        border-radius: 4px;
+        margin:auto;
+        text-align:center;
+        padding:20px;
+
+    }
+
+
+    h2.registrar b{
+        font-size: 20px;
+        font-family: Roboto,arial,sans-serif; 
+    }
+
+    span{
+        font-family: Roboto, Arial,sans-serif;
+        font-weight: 300;
+    }
+
+    a.registrarse{
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+    }
+
+
+    button{
+        width: 100%;
+        font-size: 16px;
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+        padding:5px 12px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        background-color:white;
+    }
+
+    button:hover{
+        border: 1px solid #1048b2;
+    }
+
+    input[placeholder="Email *"]{
+        font-family: Roboto, arial, sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        transition: 0.5s;
+    }
+
+    input:hover{
+        border: 1px solid #1048b2;
+    }
+
+    .registrarme{
+        border: 1px solid #1048b2;
+        background-color:#1048b2;
+        color:white;
+        padding: 5px 12px
+    }
+
+    .fa-facebook-f{
+        color:#1048b2;
+        margin-right:10px;
+    }
+
+    .fa-google{
+        color: #00b4ff;
+        margin-right:10px;
+    }
+
+    a.registrarse{
+        text-decoration:none;
+        color: #00b4ff;
+    }
+
+    a.registrarse:hover{
+        color:black;
+    }
+
+    a.logo{
+        color:#1048b2;
+        font-family: Roboto Slab,Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    } 
+
+    /* fin registrarse */
+
+    /* restablecer */
+    *{
+        box-sizing: border-box;
+        padding:0px;
+        margin:0px;
+    }
+  
+    .fondoRestablecer{
+        background: url(https://images.pexels.com/photos/5553090/pexels-photo-5553090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat fixed center;
+        background-size:cover;
+        background-origin: content-box;
+    }
+
+    .alignRestablecer{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+    }
+  
+    div.restablecer{
+        width: 400px;
+        height: auto;
+        background-color:white;
+        border-radius: 4px;
+        margin: auto;
+        text-align:center;
+        padding:30px;
+    }
+
+    input[placeholder="correo electrónico *"]{
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Roboto, arial, sans-serif;
+        font-size: 16px;
+        font-weight:300;
+        height: 40px;
+        transition: 0.5s;
+    }
+
+    input:hover{
+        border: 1px solid #1048b2;
+    }
+
+    .butRes{
+        width:100%;
+        border:1px solid #1048b2;
+        border-radius: 4px;
+        font-family:Roboto, arial, sans-serif;
+        font-size: 16px;
+        padding: 5px 12px;
+        background-color:#1048b2;
+        color:white;
+    }
+
+    .butRes:hover{
+        cursor: pointer;
+        outline: none;  
+        border:1px solid #1048b2;
+    }   
+
+    span{
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 300;
+    }
+
+   
+    .logo{
+        font-family: Roboto Slab, aril, serif;
+        font-size: 30px;
+        color:#1048b2;
+        text-decoration:none;
+    }
+
+
+    .restablecerText{
+        font-family: Roboto,arial,sans-serif;
+    } 
+
+    /* fin restablecer */
+
+    /* Suscribirse */
+     .headerSuscripción{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(14, 51, 134, 1);
+        color:white;
+        width: 100%;
+        height: auto;
+    }
+    
+    .headerSuscripción a{
+        color:white;
+        text-decoration:none;
+    }
+    
+    .headerSuscripción a h1{
+        font-size: 50px;
+    }
+    
+    .imgContenedor{
+        width: 100%;
+        height: auto;
+        background:url(https://cdn.pixabay.com/photo/2017/11/05/19/41/stadium-2921657_960_720.jpg) no-repeat center;
+        background-size:cover;
+    }
+    
+    div.subsSus{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 300px;
+        background-color: rgba(14, 51, 134, 0.5);
+        text-align: center;
+        color: white;
+    }
+    
+    
+    .subSus{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom:20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:50px;
+    }
+    
+    .pSus{
+        font-size:16px;
+        font-weight:bold;
+    }
+    
+    
+    .contenedorSus{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        position:relative;
+        bottom:250px;
+        width: 80%;
+        min-width: 769px;
+        margin: auto;
+    }
+    
+    .digitalBasico{
+        display: flex;
+        flex-flow: column wrap;
+        width:24%;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        box-shadow: 0 0 10px black;
+    }
+    
+    .digitalClub{
+        display:flex;
+        flex-flow: column wrap;
+        width:24%;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        box-shadow: 0 0 10px black;
+    }
+    
+    .digitalDiario{
+        display:flex;
+        flex-flow: column wrap;
+        width:24%;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 10px black;
+    }
+    
+    div.iconos{
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+        margin-bottom:50px;
+    }
+    
+    .iconos i{
+        font-size:70px;
+    }
+
+    .digitalBasico input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    
+    .digitalBasico input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    .digitalClub input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top:25px;
+    }
+    
+    .digitalClub input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    .digitalDiario input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    
+    .digitalDiario input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    .características p{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .características p i{
+        font-size: 14px;
+    }
+    
+    .precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+    
+    .titulos{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    
+    .diario{
+        margin-bottom: 15px;
+    }
+    
+    .empSus{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color:white;
+        font-size:18px;
+        text-align: center;
+        position:relative;
+        bottom:200px;
+    }
+    
+    fieldset{
+        border-radius: 10px;
+        padding: 20px 10px;
+        background-color: white;
+        color:black;
+        border: 1px solid black;
+    }
+    
+    legend{
+        text-align: center;
+       
+        border-radius:10px;
+        background-color: white;
+        color:black;
+        padding:5px;
+    }
+    
+    .fa-check-square{
+        color:green;
+    }
+    
+    .mailEmpresa{
+        color:#00b4ff;
+    }
+    
+    .footSuscripción{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(14, 51, 134);
+        color:white;;
+        padding: 25px;
+    }
+    
+    .footSuscripción ul i{
+        color: white;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .footSuscripción ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+    /* Fin suscribirse */
+
+    /* contacto */
+    .backCon{
+        background-color: #fefefe;
+    }
+    
+    .headerConPri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(14, 51, 134,1);
+        height: auto;
+    }
+    
+    .headerConPri a{
+        color:white;
+        text-decoration: none;
+    }
+    
+    .headerConPri a h1{
+        font-family: Roboto Slab,Arial,serif;
+        font-size: 50px;
+    }
+    
+    .headerConSec{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(14, 51, 134, 0.5);
+        color: white;
+        width:100%;
+        height: 300px;
+        
+    }
+    
+    .headerConSec h2{
+        font-size: 50px;
+    }
+    
+    .pHeaderSec{
+        font-size: 20px;
+    }
+    
+    .headerCon{
+        background:url(https://images.pexels.com/photos/1171084/pexels-photo-1171084.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center;
+        background-size:cover;
+    }
+    
+    .contenedorCon{
+        display:flex; 
+        justify-content: space-around;
+    }
+
+    .formCon{
+        width: 30%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+    }
+
+    .infoCon{
+        width:30%;
+        height:700px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: space-evenly;
+      
+    }
+
+    input[placeholder="Nombre"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Nombre"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+    
+    input[placeholder="Apellido"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Apellido"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+
+    input[placeholder="Teléfono"]{
+        width: 100%;
+        height: 40px;
+        border:none;
+        border-bottom: 3px solid #efefef;
+        color: #afafaf;
+    }
+
+    input[placeholder="Teléfono"]:focus{
+        border:none;
+        outline: none;
+        border-bottom: 3px solid rgb(15,51,134);
+        color: black;
+    }
+
+    .emailCon{
+        width: 100%;
+        border:none !important;
+        border-bottom: 3px solid #efefef !important; 
+        color: #afafaf;
+    }
+
+    .emailCon:focus{
+        border:none;
+        outline:none;
+        border-radius: 0px  !important;
+        border-bottom: 3px solid rgb(15, 51, 134) !important;
+        color:black
+    }
+
+    .sendCon{
+        width: 100px !important;
+        background-color: white !important; 
+        color: rgb(15, 51, 134) !important;
+        transition: 0.3s;
+    }
+    
+    .textareaCon{
+        width: 100%;
+        border: 3px solid #efefef;
+        resize: none;
+    }
+    
+    .textareaCon:focus{
+        width: 100%;
+        border: 3px solid rgb(15,51,134);
+        outline: none;
+    }
+
+
+    .sendCon:hover{
+        width: 100px !important;
+        background-color: rgb(15, 51, 134) !important; 
+        color: white !important;
+    }
+
+    .textCon{
+        font-size: 18px;
+    }
+
+    .textCon i{
+        font-size: 30px;
+        color: rgb(15,51,134);
+    }
+
+    span iframe{
+        width: 100%;
+    }
+
+    /* fin contacto */
+    /* estadísticas */
+    
+    .headerEst{
+        width: 100%;
+        height: auto;
+        background-color: rgb(15,51,134);
+    }
+
+    .headerEst h1{
+        color: white;
+        font-family: Roboto Slab, arial, serif;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .gridEst{
+        display: grid;
+        width: 100%;
+        grid-template-columns:1;
+        grid-template-rows:3;
+    }
+
+    .flexEst{
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+        margin: 50px auto;
+    }
+
+    .flexEst h2{
+        text-align: center;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    table tr td img{
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .grupoA{
+        color: black;
+        border: none;
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    table.grupoA caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+    }
+
+    .grupoA .par{
+        height: 40px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }
+
+
+    .grupoA td{
+        height: 40px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    table.grupoB caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+    }
+
+    .grupoB{
+        text-align: center;
+        border:none;
+        padding: 0px;
+        margin-bottom:50px;
+    }
+
+    .grupoB .par{
+        height: 40px;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }
+
+    
+    .grupoB td{
+        height: 40px;
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    }
+
+    .datosCompetición{
+        text-align: center;
+        background-color: white;
+        color: black;
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    table.datosCompetición caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+    }
+
+    .datosCompetición tr th{
+        border: none;
+        font-weight: bold;
+    }
+
+    .datosCompetición td{
+        border:none;
+        color: rgb(15, 51, 134);
+    }
+   
+    .flexGolesAsistencias{
+        display: flex;
+        width: 900px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    table.goleadores{
+        width: auto;
+        border:none;
+    }
+
+    table.goleadores caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+    }
+
+    .goleadores th{
+        border: none;
+    }
+
+    .goleadores td{
+        border: none;
+        text-align: left;
+
+    }
+
+    .parGoleadores{
+        background-color: #efefef;
+    }
+
+
+    table.asistidores caption{
+        background-color: rgb(15, 51, 134);
+        color: white;
+        font-family: Roboto Slab,arial,serif;
+        font-size: 20px;
+    }
+
+    table.asistidores{
+        width: auto;
+        border: none;
+        margin-right: none;
+    }
+
+    .asistidores th{
+        border:none;
+    }
+
+    .asistidores td{
+        border: none;
+    }
+
+    .parAsistidores{
+        background-color: #efefef;
+    }
+
+    .pieEst{
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(15, 51, 134);
+        width: 100%;
+        color: white;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .pieEst footer ul{
+        display: flex;
+    }
+
+    .pieEst footer i{
+        font-size: 50px;
+        color: white;
+        padding: 10px;
+    } 
+    /* fin estadísticas */
+
+    /* sección paises */
+
+    .gridPaises{
+        display: grid;
+        grid-template-areas:
+        'header header'
+        'main main'
+        'footer footer'
+        ;
+    }
+
+    .headerPaises{
+        grid-area:header;
+    }
+
+    .mainPaises{
+        grid-area:main;
+    }
+
+    .footPaises{
+        grid-area:footer;
+    }
+
+
+    .headerPaises{
+        widows: 100%;
+        height: 120px;
+        background-color: rgb(15, 51, 134);
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .flexPaises{
+        display: flex;
+        flex-direction: row;
+        width:800px;
+        height: auto;
+        justify-content: space-between;
+        margin: auto;
+        align-items: center;
+    }
+
+    .navPaises__ul{
+        display: flex;
+    }
+
+    .navPaises__a{
+        color: white;
+        padding:10px;
+        font-size: 18px;
+        font-family: Roboto, arial,sans-serif;
+    }
+
+    .headerPaises ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .headerPaises ul li a{
+        color: white;
+        padding: 10px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 18px;
+    }
+
+    .navPSecundario__a:hover{
+        background-color: white;
+        color: black;
+        border-bottom: 3px solid yellow;
+    }
+
+    .navPaises__a:hover{
+        background-color:white;
+        color: black;
+        border-left: 3px solid yellow;
+    }
+
+    .navPSecundario__ul{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .headerPaises h1{
+        font-family: Roboto Slab,arial,serif;
+        font-size: 50px;
+        color: white;
+    }
+
+    .flexCardsPaises{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        margin-left:550px;
+        height: 1500px;
+        margin-top: 30px;
+    }
+
+    .Flag{
+        width:50%
+    }
+
+    .Flag__img{
+        width: 284px;
+        height: 177px;
+    }
+
+    .cardPaises{
+        display: flex;
+        max-width: 50%;
+        height: auto;
+        box-shadow: 0 0 10px;
+        margin-top: 20px;
+    }
+
+    .bodyCardPaises{
+        width: 50%;
+    }
+
+    .bodyCardPaises__h2{
+        font-size: 25px;
+    }
+
+    .cardPaises__h1{
+        font-size: 25px;
+    }
+    .cardPaises__img{
+        width:50%;
+        height: auto;
+    }
+
+    .footPaises{
+        width:100%;
+        background-color: rgb(15, 51, 134);
+        text-align: center;
+    }
+
+    .redesPaises{
+        display: flex;
+        justify-content: center;
+    }
+
+    .redesPaises__i{
+        color:white;
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    .footPaises__p{
+        color: white;
+    }
+    /* fin paises */
+
+    /* articulos */
+
+    .gridNoticia{
+        display:grid;
+        grid-template-areas:
+        'head head'
+        'main main'
+        'foot foot';
+    }
+
+    .headerNoticia{
+        grid-area:head;
+    }
+
+    .mainNoticia{
+        grid-area:main;
+    }
+
+    .footerNoticia{
+        grid-area:foot;
+    }
+
+    .headerNoticia{
+        background-color: rgb(15, 51, 134);
+        width: 100vw;
+        height: 120px;
+    }
+
+    .flexHeaderNoticia{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 42%;
+        margin: auto;
+        align-items: center;
+        height: 120px;
+    }
+
+    .flexHeaderNoticia h1{
+        color: white;
+        font-size: 50px;
+    }
+
+    .flexHeaderNoticia ul{
+        display: flex;
+    }
+
+    .flexHeaderNoticia ul li a{
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .flexHeaderNoticia ul li a:hover{
+        background-color: white;
+        color: black;
+        border-left: 3px solid yellow;
+    }
+
+
+    .flexnoticia{
+        width: 800px;
+        margin: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .flexnoticia h2{
+        font-size: 50px;
+    }
+
+    .textNotA p, span{
+        font-size: 16px;
+    }
+
+    .fa-thumbs-up{
+        font-size: 30px;
+        color: rgb(15, 51, 134);
+        padding:10px;
+        transition: .5s;
+    }
+
+    .fa-thumbs-up:hover{
+        transform: rotate(20deg);
+        cursor:pointer;
+    }
+
+    .footerNoticia{
+        background-color: rgb(15, 51, 134);
+        width: 100vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .footerNoticia p{
+        color: white;
+        font-size: 18px;
+        font-family: Roboto,arial,sans-serif;
+    }
+
+    .footerNoticia ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerNoticia i{
+        color:white;
+        font-size: 40px;
+        padding:10px;
+    }
+
+    /* fin articulos */
+
+
+
+   
+
+
+    .bg{
+        background-color:rgb(15, 51, 134)
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    .table__th--size{
+        font-size: 12px;
+    }
+
+    .table__td--size{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    .sPrincipal{
+        width: 1200px; 
+        margin:auto;
+    }
+
+}
