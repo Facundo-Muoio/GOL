@@ -4,6 +4,46 @@
     padding:0;
 }
 
+.dropdown__ul--bg{
+    background-color: rgb(10, 38, 116);
+}
+
+.dropdown-item{
+    color:white;
+}
+
+
+.navDiv__width{
+    width: 100vw
+}
+
+.navDiv__color{
+    background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+}
+
+@media only screen and (min-width:768px){
+    .dropdown__li--display{
+        display: none;
+    }
+    
+    .mainNav__div--width{
+         width: 705px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .navSecundary{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .navSecundary__a--fontsize{
+        font-size: 16px;
+        padding:8px 6px;
+    }
+}
 
 
 /* mobile first */
@@ -24,22 +64,19 @@
         font-size: 20px;
     }
     
-    .lNav{
-        font-family: Roboto Slab,arial,serif;
-        color:white;
+   .navbar-brand{
         font-size: 35px;
+        font-family: Roboto Slab, arial, serif;    
     }
 
-
-    .wNav{
-        width: 100vw;
-        box-shadow: 0px 0px 10px grey;
+   .nav-item{
+    transition:0.2s;
+    border-radius:4px;
     }
 
-    .nav__secundaria--display{
-        display: none;
+    .nav-item:hover{
+    background-color: rgb(10, 38, 116);
     }
-    
 
     .Publicidad__div--heigth{
         height: 120px;
@@ -71,12 +108,18 @@
         font-size: 30px;
     }
 
+    
+    .fas{ 
+        margin-right: 10px;
+    }
+
 
     .card{
         margin-top: 15px;
         box-shadow: 0px 0px 10px grey;
         border-radius: 4px;
         border:none;
+        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) 
     }
 
 
@@ -85,11 +128,17 @@
         font-size: 14px;
         color: black;
         line-height: 14px;
+        color:white;
     }
 
     .card h2{
         line-height: 17px;
         font-size: 16px;
+        color:white;
+    }
+
+    .card__a--decoration{
+        text-decoration: none;
     }
 
     .nav-link{
@@ -104,6 +153,22 @@
     .tsize{
         width: 100%;
         height: auto;
+    }
+
+    .table__caption--propiedades{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
+        text-align: center;
+        color: white;
+    }
+
+    .table__th--parColor{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }    
+
+    .table__th--imparColor{
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)!important;;
+        color:black;
     }
 
     .pie{
@@ -536,6 +601,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Nombre"]:focus{
@@ -551,6 +617,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Apellido"]:focus{
@@ -566,6 +633,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Teléfono"]:focus{
@@ -602,6 +670,7 @@
         width: 100%;
         border: 3px solid #efefef;
         resize: none;
+        transition: 0.3 s;
     }
     
     .textareaCon:focus{
@@ -861,16 +930,19 @@
         font-size: 18px;
     }
    
-    
-    .lNav{
-        font-family: Roboto Slab,arial,serif;
+    .navbar-brand{
         font-size: 50px;
-        color:white;
+        font-family: Roboto Slab, arial, serif;    
+   }
+
+
+    .nav-item{
+        transition:0.2s;
+        border-radius:4px;
     }
 
-   .wNav{
-       width: 100vw;
-       box-shadow: 0px 0px 10px grey;
+    .nav-item:hover{
+        background-color: rgb(10, 38, 116);
     }
 
     .Publicidad__div--heigth{
@@ -924,28 +996,59 @@
         min-height: auto;
     }
 
-  
     .card{
         margin-top: 15px;
         box-shadow: 0px 0px 10px grey;
         border-radius: 4px;
         border:none;
+        transition: 0.2s;
+        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ; 
     }
   
+    .card:hover{
+        box-shadow:0px 0px 20px rgb(20, 20, 20);
+        cursor:pointer;
+    }
+    
+    .card:hover h2{
+        text-decoration:underline;
+    }
+
     .card p{
         font-size: 14px;
-        color: black;
+        color: white;
         line-height: 17px;
     }
 
     .card h2{
         line-height: 17px;
         font-size: 18px;
+        color: white;
+    }
+
+    .card__a--decoration{
+        text-decoration: none;
     }
 
     .tsize{
         width: 100%;
         height: auto;
+    }
+
+    .table__caption--propiedades{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
+        text-align: center;
+        color: white;
+    }
+
+    .table__th--parColor{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        color: white;
+    }    
+
+    .table__th--imparColor{
+        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)!important;;
+        color:black;
     }
 
     .pie{
@@ -1686,6 +1789,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Nombre"]:focus{
@@ -1701,6 +1805,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Apellido"]:focus{
@@ -1716,6 +1821,7 @@
         border:none;
         border-bottom: 3px solid #efefef;
         color: #afafaf;
+        transition: 0.5s;
     }
 
     input[placeholder="Teléfono"]:focus{
@@ -1730,6 +1836,7 @@
         border:none !important;
         border-bottom: 3px solid #efefef !important; 
         color: #afafaf;
+        transition: 0.5s;
     }
 
     .emailCon:focus{
@@ -1751,6 +1858,7 @@
         width: 100%;
         border: 3px solid #efefef;
         resize: none;
+        transition: 0.3s;
     }
     
     .textareaCon:focus{
@@ -2008,7 +2116,7 @@
     .headerPaises{
         widows: 100%;
         height: 120px;
-        background-color: rgb(15, 51, 134);
+        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
         display: flex;
         flex-direction: column;
     }
@@ -2048,15 +2156,17 @@
     }
 
     .navPSecundario__a:hover{
-        background-color: white;
-        color: black;
-        border-bottom: 3px solid yellow;
+        background-color: rgb(10, 38, 116);
+        color: white;
+        border-radius: 4px;
+        transition: 0.2s;
     }
 
     .navPaises__a:hover{
-        background-color:white;
-        color: black;
-        border-left: 3px solid yellow;
+        background-color: rgb(10, 38, 116);
+        color: white;
+        border-radius: 4px;
+        transition: 0.2s;
     }
 
     .navPSecundario__ul{
@@ -2089,12 +2199,28 @@
         height: 177px;
     }
 
+
     .cardPaises{
         display: flex;
         max-width: 50%;
         height: auto;
-        box-shadow: 0 0 10px;
+        box-shadow: 0 0 10px grey;
         margin-top: 20px;
+        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+        transition:0.3s;
+    }
+
+    .cardPaises:hover{
+        box-shadow:0 0 20px rgb(20, 20, 20) ;
+        cursor:pointer;
+    }
+
+    .cardPaises:hover h2{
+        text-decoration: underline;
+    }
+
+    .cardPaises:hover h1{
+        text-decoration: underline;
     }
 
     .bodyCardPaises{
@@ -2103,11 +2229,18 @@
 
     .bodyCardPaises__h2{
         font-size: 25px;
+        color: white;
+    }
+    
+    .bodyCardPaises__p{
+        color: white;
     }
 
     .cardPaises__h1{
         font-size: 25px;
+        color:white;
     }
+    
     .cardPaises__img{
         width:50%;
         height: auto;
@@ -2158,7 +2291,7 @@
     }
 
     .headerNoticia{
-        background-color: rgb(15, 51, 134);
+        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
         width: 100vw;
         height: 120px;
     }
@@ -2189,9 +2322,10 @@
     }
 
     .flexHeaderNoticia ul li a:hover{
-        background-color: white;
-        color: black;
-        border-left: 3px solid yellow;
+        background-color: rgb(10, 38, 116);
+        color: white;
+        border-radius: 4px;
+        transition: 0.2s;
     }
 
 

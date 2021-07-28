@@ -4,6 +4,33 @@
   margin: 0px;
   padding: 0; }
 
+.dropdown__ul--bg {
+  background-color: #0a2674; }
+
+.dropdown-item {
+  color: white; }
+
+.navDiv__width {
+  width: 100vw; }
+
+.navDiv__color {
+  background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%); }
+
+@media only screen and (min-width: 768px) {
+  .dropdown__li--display {
+    display: none; }
+  .mainNav__div--width {
+    width: 705px; } }
+
+@media only screen and (max-width: 768px) {
+  .navSecundary {
+    display: none; } }
+
+@media only screen and (max-width: 992px) {
+  .navSecundary__a--fontsize {
+    font-size: 16px;
+    padding: 8px 6px; } }
+
 /* mobile first */
 @media only screen and (max-width: 768px) {
   * {
@@ -16,15 +43,14 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: Roboto Slab, arial,serif;
     font-size: 20px; }
-  .lNav {
-    font-family: Roboto Slab,arial,serif;
-    color: white;
-    font-size: 35px; }
-  .wNav {
-    width: 100vw;
-    box-shadow: 0px 0px 10px grey; }
-  .nav__secundaria--display {
-    display: none; }
+  .navbar-brand {
+    font-size: 35px;
+    font-family: Roboto Slab, arial, serif; }
+  .nav-item {
+    transition: 0.2s;
+    border-radius: 4px; }
+  .nav-item:hover {
+    background-color: #0a2674; }
   .Publicidad__div--heigth {
     height: 120px; }
   .Publicidad__a--size {
@@ -43,18 +69,25 @@
     color: white;
     margin: 0px;
     font-size: 30px; }
+  .fas {
+    margin-right: 10px; }
   .card {
     margin-top: 15px;
     box-shadow: 0px 0px 10px grey;
     border-radius: 4px;
-    border: none; }
+    border: none;
+    background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%); }
   .card p {
     font-size: 14px;
     color: black;
-    line-height: 14px; }
+    line-height: 14px;
+    color: white; }
   .card h2 {
     line-height: 17px;
-    font-size: 16px; }
+    font-size: 16px;
+    color: white; }
+  .card__a--decoration {
+    text-decoration: none; }
   .nav-link {
     font-size: 14px; }
   .bg {
@@ -62,6 +95,16 @@
   .tsize {
     width: 100%;
     height: auto; }
+  .table__caption--propiedades {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #0f3386 0%, #14488c 90%);
+    text-align: center;
+    color: white; }
+  .table__th--parColor {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #0f3386 0%, #14488c 90%);
+    color: white; }
+  .table__th--imparColor {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    color: black; }
   .pie {
     background-color: #0e3386;
     color: white;
@@ -335,7 +378,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Nombre"]:focus {
     border: none;
     outline: none;
@@ -346,7 +390,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Apellido"]:focus {
     border: none;
     outline: none;
@@ -357,7 +402,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Teléfono"]:focus {
     border: none;
     outline: none;
@@ -383,7 +429,8 @@
   .textareaCon {
     width: 100%;
     border: 3px solid #efefef;
-    resize: none; }
+    resize: none;
+    transition: 0.3 s; }
   .textareaCon:focus {
     width: 100%;
     border: 3px solid #0f3386;
@@ -548,13 +595,14 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: Roboto Slab, arial,serif;
     font-size: 18px; }
-  .lNav {
-    font-family: Roboto Slab,arial,serif;
+  .navbar-brand {
     font-size: 50px;
-    color: white; }
-  .wNav {
-    width: 100vw;
-    box-shadow: 0px 0px 10px grey; }
+    font-family: Roboto Slab, arial, serif; }
+  .nav-item {
+    transition: 0.2s;
+    border-radius: 4px; }
+  .nav-item:hover {
+    background-color: #0a2674; }
   .Publicidad__div--heigth {
     height: 100px; }
   .Publicidad__a--size {
@@ -589,17 +637,37 @@
     margin-top: 15px;
     box-shadow: 0px 0px 10px grey;
     border-radius: 4px;
-    border: none; }
+    border: none;
+    transition: 0.2s;
+    background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%); }
+  .card:hover {
+    box-shadow: 0px 0px 20px #141414;
+    cursor: pointer; }
+  .card:hover h2 {
+    text-decoration: underline; }
   .card p {
     font-size: 14px;
-    color: black;
+    color: white;
     line-height: 17px; }
   .card h2 {
     line-height: 17px;
-    font-size: 18px; }
+    font-size: 18px;
+    color: white; }
+  .card__a--decoration {
+    text-decoration: none; }
   .tsize {
     width: 100%;
     height: auto; }
+  .table__caption--propiedades {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #0f3386 0%, #14488c 90%);
+    text-align: center;
+    color: white; }
+  .table__th--parColor {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #0f3386 0%, #14488c 90%);
+    color: white; }
+  .table__th--imparColor {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    color: black; }
   .pie {
     background-color: #0e3386;
     color: white;
@@ -1102,7 +1170,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Nombre"]:focus {
     border: none;
     outline: none;
@@ -1113,7 +1182,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Apellido"]:focus {
     border: none;
     outline: none;
@@ -1124,7 +1194,8 @@
     height: 40px;
     border: none;
     border-bottom: 3px solid #efefef;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   input[placeholder="Teléfono"]:focus {
     border: none;
     outline: none;
@@ -1134,7 +1205,8 @@
     width: 100%;
     border: none !important;
     border-bottom: 3px solid #efefef !important;
-    color: #afafaf; }
+    color: #afafaf;
+    transition: 0.5s; }
   .emailCon:focus {
     border: none;
     outline: none;
@@ -1149,7 +1221,8 @@
   .textareaCon {
     width: 100%;
     border: 3px solid #efefef;
-    resize: none; }
+    resize: none;
+    transition: 0.3s; }
   .textareaCon:focus {
     width: 100%;
     border: 3px solid #0f3386;
@@ -1309,7 +1382,7 @@
   .headerPaises {
     widows: 100%;
     height: 120px;
-    background-color: #0f3386;
+    background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%);
     display: flex;
     flex-direction: column; }
   .flexPaises {
@@ -1336,13 +1409,15 @@
     font-family: Roboto,arial,sans-serif;
     font-size: 18px; }
   .navPSecundario__a:hover {
-    background-color: white;
-    color: black;
-    border-bottom: 3px solid yellow; }
+    background-color: #0a2674;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s; }
   .navPaises__a:hover {
-    background-color: white;
-    color: black;
-    border-left: 3px solid yellow; }
+    background-color: #0a2674;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s; }
   .navPSecundario__ul {
     position: relative;
     bottom: 10px; }
@@ -1367,14 +1442,27 @@
     display: flex;
     max-width: 50%;
     height: auto;
-    box-shadow: 0 0 10px;
-    margin-top: 20px; }
+    box-shadow: 0 0 10px grey;
+    margin-top: 20px;
+    background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%);
+    transition: 0.3s; }
+  .cardPaises:hover {
+    box-shadow: 0 0 20px #141414;
+    cursor: pointer; }
+  .cardPaises:hover h2 {
+    text-decoration: underline; }
+  .cardPaises:hover h1 {
+    text-decoration: underline; }
   .bodyCardPaises {
     width: 50%; }
   .bodyCardPaises__h2 {
-    font-size: 25px; }
+    font-size: 25px;
+    color: white; }
+  .bodyCardPaises__p {
+    color: white; }
   .cardPaises__h1 {
-    font-size: 25px; }
+    font-size: 25px;
+    color: white; }
   .cardPaises__img {
     width: 50%;
     height: auto; }
@@ -1403,7 +1491,7 @@
   .footerNoticia {
     grid-area: foot; }
   .headerNoticia {
-    background-color: #0f3386;
+    background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%);
     width: 100vw;
     height: 120px; }
   .flexHeaderNoticia {
@@ -1424,9 +1512,10 @@
     padding: 10px;
     font-size: 18px; }
   .flexHeaderNoticia ul li a:hover {
-    background-color: white;
-    color: black;
-    border-left: 3px solid yellow; }
+    background-color: #0a2674;
+    color: white;
+    border-radius: 4px;
+    transition: 0.2s; }
   .flexnoticia {
     width: 800px;
     margin: auto;

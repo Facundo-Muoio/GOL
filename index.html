@@ -21,65 +21,84 @@
 	<link rel="stylesheet"	href="css/style.css"> 
 	<!-- Fin link -->
 	</head>
-  <body>
-    <div class="wNav">	
-		<nav class="navbar navbar-expand-md navbar-dark bg">
-			<a class="navbar-brand lNav" href="#">GOL</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
-				 	<li class="nav-item">
-						<a class="nav-link text-white" href="/datos/estadisticas.html"><i class="fas fa-chart-bar"></i>Estadísticas</a>
-				  	</li>
-				  	<li class="nav-item">
-						<a class="nav-link text-white" href="/datos/contacto.html"><i class="fas fa-paper-plane"></i>Contacto</a>
-				  	</li>
-				  	<li class="nav-item">
-						<a class="nav-link text-white" href="/Usuarios/Ingresar.html"><i class="fas fa-sign-in-alt"></i>Ingresar</a>
-				  	</li>
-				  	<li class="nav-item">
-						<a class="nav-link text-white" href="/Usuarios/suscribirse.html">Suscribirse</a>
-				  	</li>
-				</ul>
-			</div>
-		</nav>
-		<nav class="navbar navbar-expand-sm bg navbar-dark justify-content-center navshadow nav__secundaria--display">
-			<ul class="navbar-nav">
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupa A/Argentina.html">Argentina</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupa A/Bolivia.html">Bolivia</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupa A/Chile.html">Chile</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupa A/Paraguay.html">Paraguay</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupa A/Uruguay.html">Uruguay</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupo B/Brasil.html">Brasil</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupo B/Colombia.html">Colombia</a>
-			 	 </li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupo B/Ecuador.html">Ecuador</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupo B/Peru.html">Perú</a>
-			  	</li>
-			  	<li class="nav-item">
-					<a class="nav-link text-white" href="posts/equipos/Grupo B/Venezuela.html">Venezuela</a>
-			  	</li>
-			</ul>
-		</nav>
-	</div> 
+  	<body>	
+		<div class="navDiv__width navDiv__color">
+			<nav class="navbar navbar-expand-sm navbar-dark">
+			  <div class="container-lg container-fluid-sm mainNav__div--width mx-auto">
+				<a class="navbar-brand" href="#">GOL</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+				  <ul class="navbar-nav">
+					<li class="nav-item dropdown dropdown__li--display">
+					  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Paises
+					  </a>
+					  <ul class="dropdown-menu dropdown__ul--bg" aria-labelledby="navbarDropdownMenuLink">
+						<li><a class="dropdown-item" href="posts/equipos/Grupa A/Argentina.html">Argentina</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupa A/Bolivia.html">Bolivia</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupa A/Chile.html">Chile</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupa A/Paraguay.html">Paraguay</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupa A/Uruguay.html">Uruguay</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupo B/Brasil.html">Brasil</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupo B/Colombia.html">Colombia</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupo B/Ecuador.html">Ecuador</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupo B/Peru.html">Perú</a></li>
+						<li><a class="dropdown-item" href="posts/equipos/Grupo B/Venezuela.html">Venezuela</a></li>
+					  </ul>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-white" href="datos/estadisticas.html"><i class="fas fa-chart-bar"></i>Estadísticas</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-white" href="datos/contacto.html"><i class="fas fa-paper-plane"></i>Contacto</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-white" href="Usuarios/Ingresar.html"><i class="fas fa-sign-in-alt"></i>Ingresar</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-white" href="Usuarios/suscribirse.html">Suscribite</a>
+					</li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<nav class="container mx-auto navSecundary">
+			  <ul class="nav justify-content-center">
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupa A/Argentina.html">Argentina</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupa A/Bolivia.html">Bolivia</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupa A/Chile.html">Chile</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupa A/Paraguay.html">Paraguay</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupa A/Uruguay.html">Uruguay</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupo B/Brasil.html">Brasil</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupo B/Colombia.html">Colombia</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupo B/Ecuador.html">Ecuador</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupo B/Peru.html">Perú</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white navSecundary__a--fontsize" href="posts/equipos/Grupo B/Venezuela.html">Venezuela</a>
+				</li>
+			  </ul>
+			</nav>
+		  </div>
 	
 	<main>
 		<section>
@@ -99,28 +118,40 @@
 				<div class="row row-cols-sm-1 row-cols-md-12 justify-content-md-between mx-0">
 					<div class="col-md-3 p-0 ">
 						<div class="card">
-							<img src="posts/equipos/Grupo B/Brasil/imgBra/neymar.jpg" class="card-img-top" alt="Neymar">
+							<a class="card__a--decoration" href="posts/equipos/Grupo B/Brasil/Articulo1.html">
+								<img src="posts/equipos/Grupo B/Brasil/imgBra/neymar.jpg" class="card-img-top" alt="Neymar">
+							</a>
 							<div class="card-body">
-								<h2>Neymar</h2>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="card__a--decoration" href="posts/equipos/Grupo B/Brasil/Articulo1.html">
+									<h2>Neymar</h2>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 p-0 ">
 						<div class="card justify-content-center">
-							<img src="posts/equipos/Grupo B/Colombia/imgCol/james-lesion.jpg" class="card-img-top" alt="James">
+							<a class="card__a--decoration" class="card__a--decoration" class="card__a--decoration" href="posts/equipos/Grupo B/Colombia/Articulo1.html">
+								<img src="posts/equipos/Grupo B/Colombia/imgCol/james-lesion.jpg" class="card-img-top" alt="James">
+							</a>
 							<div class="card-body">
-								<h2>Colombia sin james</h2>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="card__a--decoration" href="posts/equipos/Grupo B/Colombia/Articulo1.html">
+									<h2>Colombia sin james</h2>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 p-0 ">
 						<div class="card">
-							<img src="posts/equipos/Grupa A/Chile/imgChi/alexis-sin-copa.jpg" class="card-img-top alexis" alt="Alexis">
+							<a class="card__a--decoration" href="posts/equipos/Grupa A/Chile/Articulo1.html">
+								<img src="posts/equipos/Grupa A/Chile/imgChi/alexis-sin-copa.jpg" class="card-img-top alexis" alt="Alexis">
+							</a>
 							<div class="card-body">
-								<h2>Alexis sin copa</h2>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="card__a--decoration" href="posts/equipos/Grupa A/Chile/Articulo1.html">
+									<h2>Alexis sin copa</h2>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -128,28 +159,40 @@
 				<div class="row row-cols-sm-1 row-cols-md-12 justify-content-md-between mx-0">
 					<div class="col-md-3 p-0 ">
 						<div class="card">
-							<img src="posts/equipos/Grupo B/Perú/imgPer/tigre.jpg" class="card-img-top" alt="Tigre gareca">
+							<a class="card__a--decoration" href="posts/equipos/Grupo B/Perú/Articulo1.html">
+								<img src="posts/equipos/Grupo B/Perú/imgPer/tigre.jpg" class="card-img-top" alt="Tigre gareca">
+							</a>
 							<div class="card-body">
-								<h2>El equipo del tigre!</h2>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="card__a--decoration" href="posts/equipos/Grupo B/Perú/Articulo1.html">
+									<h2>El equipo del tigre!</h2>
+									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								</a>
 							</div>
 						</div>
 					</div>	
 						<div class="col-md-3 p-0 ">
 							<div class="card">
-								<img src="posts/equipos/Grupa A/Paraguay/imgPar/romeros.png" class="card-img-top" alt="Los romeros">
+								<a class="card__a--decoration" href="posts/equipos/Grupa A/Paraguay/Articulo1.html">
+									<img src="posts/equipos/Grupa A/Paraguay/imgPar/romeros.png" class="card-img-top" alt="Los romeros">
+								</a>
 								<div class="card-body">
-									<h2>¿Los romeros de arranque?</h2>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a class="card__a--decoration" href="posts/equipos/Grupa A/Paraguay/Articulo1.html">
+										<h2>¿Los romeros de arranque?</h2>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-3 p-0 ">
 							<div class="card">
-								<img src="posts/equipos/Grupa A/Argentina/imgArg/armani-positivo-covid.jpg" class="card-img-top armani" alt="Armani">
+								<a class="card__a--decoration" href="posts/equipos/Grupa A/Argentina/Articulo1.html">
+									<img src="posts/equipos/Grupa A/Argentina/imgArg/armani-positivo-covid.jpg" class="card-img-top armani" alt="Armani">
+								</a>
 								<div class="card-body">
-									<h2>Armani sigue dando positivo</h2>
-									<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									<a class="card__a--decoration" href="posts/equipos/Grupa A/Argentina/Articulo1.html">
+										<h2>Armani sigue dando positivo</h2>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -170,131 +213,133 @@
 	
 			<div class="row d-flex justify-content-between m-0">
 				<div class="col-md-5 p-0 table-responsive">
-					<table class="table table-dark table-striped tsize">
+					<table class="table tsize caption-top">
+						<caption class="table__caption--propiedades">Grupo A</caption>
 						<tr>
-							<th class="table__th--size">Pos</th>
-							<th class="table__th--size">Equipo</th>
-							<th class="table__th--size">PJ</th>
-							<th class="table__th--size">PG</th>
-							<th class="table__th--size">PE</th>
-							<th class="table__th--size">PP</th>
-							<th class="table__th--size">DG</th>
-							<th class="table__th--size">Pts</th>
+							<th class="table__th--size table__th--imparColor">Pos</th>
+							<th class="table__th--size table__th--imparColor">Equipo</th>
+							<th class="table__th--size table__th--imparColor">PJ</th>
+							<th class="table__th--size table__th--imparColor">PG</th>
+							<th class="table__th--size table__th--imparColor">PE</th>
+							<th class="table__th--size table__th--imparColor">PP</th>
+							<th class="table__th--size table__th--imparColor">DG</th>
+							<th class="table__th--size table__th--imparColor">Pts</th>
 						</tr>
 							<tr>
-							<td class="table__td--size">1</td>
-							<td class="table__td--size">Paraguay</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
+							<td class="table__td--size  table__th--parColor">1</td>
+							<td class="table__td--size  table__th--parColor">Paraguay</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
 						</tr>
 						<tr>
-							<td class="table__td--size">2</td>
-							<td class="table__td--size">Uruguay</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
+							<td class="table__td--size table__th--imparColor">2</td>
+							<td class="table__td--size table__th--imparColor">Uruguay</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
 						</tr>
 						<tr>
-							<td class="table__td--size">3</td>
-							<td class="table__td--size">Argentina</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
+							<td class="table__td--size  table__th--parColor">3</td>
+							<td class="table__td--size  table__th--parColor">Argentina</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+						</tr> 
+						<tr>
+							<td class="table__td--size table__th--imparColor">4</td>
+							<td class="table__td--size table__th--imparColor">Chile</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
 						</tr>
 						<tr>
-							<td class="table__td--size">4</td>
-							<td class="table__td--size">Chile</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-						</tr>
-						<tr>
-							<td class="table__td--size">5</td>
-							<td class="table__td--size">Bolivia</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
-							<td class="table__td--size">0</td>
+							<td class="table__td--size  table__th--parColor">5</td>
+							<td class="table__td--size  table__th--parColor">Bolivia</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
 						</tr>
 					</table>
 				</div>
 				<div class="col-md-5 p-0 table-responsive">
-					<table class="table table-dark table-striped tsize">
-							<tr>
-								<th class="table__th--size">Pos</th>
-								<th class="table__th--size">Equipo</th>
-								<th class="table__th--size">PJ</th>
-								<th class="table__th--size">PG</th>
-								<th class="table__th--size">PE</th>
-								<th class="table__th--size">PP</th>
-								<th class="table__th--size">DG</th>
-								<th class="table__th--size">Pts</th>
-							</tr>
-							<tr>
-								<td class="table__td--size">1</td>
-								<td class="table__td--size">Brasil</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-							</tr>
-							<tr>
-								<td class="table__td--size">2</td>
-								<td class="table__td--size">Colombia</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-							</tr>
-							<tr>
-								<td class="table__td--size">3</td>
-								<td class="table__td--size">Ecuador</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-							</tr>
-							<tr>
-								<td class="table__td--size">4</td>
-								<td class="table__td--size">Perú</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-							</tr>
-							<tr>
-								<td class="table__td--size">5</td>
-								<td class="table__td--size">Venezuela</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-								<td class="table__td--size">0</td>
-							</tr>
+					<table class="table tsize caption-top">
+						<caption class="table__caption--propiedades">Grupo B</caption>
+						<tr>
+							<th class="table__th--size table__th--imparColor">Pos</th>
+							<th class="table__th--size table__th--imparColor">Equipo</th>
+							<th class="table__th--size table__th--imparColor">PJ</th>
+							<th class="table__th--size table__th--imparColor">PG</th>
+							<th class="table__th--size table__th--imparColor">PE</th>
+							<th class="table__th--size table__th--imparColor">PP</th>
+							<th class="table__th--size table__th--imparColor">DG</th>
+							<th class="table__th--size table__th--imparColor">Pts</th>
+						</tr>
+						<tr>
+							<td class="table__td--size  table__th--parColor">1</td>
+							<td class="table__td--size  table__th--parColor">Brasil</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+						</tr>
+						<tr>
+							<td class="table__td--size table__th--imparColor">2</td>
+							<td class="table__td--size table__th--imparColor">Colombia</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+						</tr>
+						<tr>
+							<td class="table__td--size  table__th--parColor">3</td>
+							<td class="table__td--size  table__th--parColor">Ecuador</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+						</tr>
+						<tr>
+							<td class="table__td--size table__th--imparColor">4</td>
+							<td class="table__td--size table__th--imparColor">Perú</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+							<td class="table__td--size table__th--imparColor">0</td>
+						</tr>
+						<tr>
+							<td class="table__td--size  table__th--parColor">5</td>
+							<td class="table__td--size  table__th--parColor">Venezuela</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+							<td class="table__td--size  table__th--parColor">0</td>
+						</tr>
 					</table>
 				</div>
 			</div>
