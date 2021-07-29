@@ -16,6 +16,18 @@
 .navDiv__color {
   background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%); }
 
+.body__bg--background {
+  background: url(https://www.expedientepolitico.com.ar/wp-content/uploads/2020/05/balon-pinchado.jpg) no-repeat fixed;
+  background-size: cover; }
+
+.error__div--margin {
+  margin-top: 200px; }
+
+.error__div--propiedades {
+  font-family: Roboto, arial,sans-serif;
+  font-size: 120px;
+  color: white; }
+
 @media only screen and (min-width: 768px) {
   .dropdown__li--display {
     display: none; }
