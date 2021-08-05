@@ -613,6 +613,9 @@
   .nav-item {
     transition: 0.2s;
     border-radius: 4px; }
+  .escudo__size {
+    width: auto;
+    height: 80px; }
   .nav-item:hover {
     background-color: #0a2674; }
   .Publicidad__div--heigth {
