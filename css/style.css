@@ -32,7 +32,9 @@
   .dropdown__li--display {
     display: none; }
   .mainNav__div--width {
-    width: 705px; } }
+    width: 780px;
+    padding-right: 0px;
+    padding-left: 0px; } }
 
 @media only screen and (max-width: 768px) {
   .navSecundary {
@@ -89,6 +91,8 @@
     border-radius: 4px;
     border: none;
     background-image: linear-gradient(135deg, #0f3386 0%, #14488c 90%); }
+  .card__resaltante--img {
+    width: 100%; }
   .card p {
     font-size: 14px;
     color: black;
@@ -117,6 +121,9 @@
   .table__th--imparColor {
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
     color: black; }
+  .publicidades2 {
+    width: 100vw;
+    height: auto; }
   .pie {
     background-color: #0e3386;
     color: white;
@@ -615,9 +622,12 @@
     border-radius: 4px; }
   .escudo__size {
     width: auto;
-    height: 80px; }
+    height: 50px;
+    transition: scale 0.5s; }
   .nav-item:hover {
     background-color: #0a2674; }
+  .escudo__size:hover {
+    transform: scale(1.3, 1.3); }
   .Publicidad__div--heigth {
     height: 100px; }
   .Publicidad__a--size {
@@ -627,7 +637,7 @@
     background: url(https://www.totalmedios.com/img/noticias/2021/05/6091359308f81__838x390.jpg) no-repeat center;
     background-size: cover; }
   .nPrincipal__div--background {
-    background: url(https://media.tycsports.com/files/2021/07/11/305466/argentina-formacion_1440x810_wmk.jpg?v=1) no-repeat;
+    background: url(../posts/equipos/grupoA/Argentina/imgArg/argentina-campeona.jpg) no-repeat center;
     background-size: cover; }
   .nPrincipal__div--size {
     width: 100%;
@@ -639,9 +649,9 @@
   .fas {
     margin-right: 10px; }
   .card-img-top {
-    max-width: 100%;
+    width: 100%;
     min-width: auto;
-    max-height: 210px;
+    height: 210px;
     min-height: auto; }
   .armani, .alexis {
     max-width: 100%;
@@ -670,6 +680,24 @@
     color: white; }
   .card__a--decoration {
     text-decoration: none; }
+  .card__resaltante {
+    height: 660px;
+    width: 100%;
+    min-width: 0;
+    min-height: 374px; }
+  .card__resaltante--img {
+    height: 420px;
+    width: 100%;
+    min-width: auto;
+    min-height: auto; }
+  .card__aladoResaltante {
+    max-width: 300px;
+    min-width: 0;
+    min-height: auto; }
+  .seccion__h3--propiedades {
+    border-bottom: 3px solid black; }
+  .margin__row--size {
+    margin: 80px 0px; }
   .tsize {
     width: 100%;
     height: auto; }
@@ -1578,3 +1606,25 @@
   .sPrincipal {
     width: 1200px;
     margin: auto; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .publicidades2 {
+    width: 180px;
+    height: auto; }
+  .card__resaltante--img {
+    width: 360px; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .publicidades2 {
+    width: 240px;
+    height: auto; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .publicidades2 {
+    width: 285px;
+    height: 580px; } }
+
+@media only screen and (min-width: 1400px) {
+  .publicidades2 {
+    width: 330px;
+    height: 580px; } }
