@@ -12,11 +12,14 @@
     <script src="https://kit.fontawesome.com/4dc73a2bed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <!-- fin Link -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Fin Bootstrap -->
 </head>
 <body>
     <!-- Inicio Header -->
     <Header>
-        <div class="headerSuscripción"> 
+        <div class="headerSuscripción">
         <a href="../index.html"><h1 class="titulo">GOL</h1></a>
         </div>    
     </Header>
@@ -30,50 +33,65 @@
             <p class="pSus">Período de suscripción mensual
         </div>
     </div>    
-        <div class="contenedorSus">
-            <div class="digitalBasico">
-                <span class="titulos">Digital báscio + PDF</span>
-                <div class="iconos">
-                    <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i>
-                </div>
-                <p class="precio">$50<p>pago mensual<br><br>
-                <input type="button" value="SUSCRIBIRME">
-                <div class="características">
-                    <p><i class="fas fa-check-circle"></i>Acceso ilimitado
-                    <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
-                </div>
-            </div>    
-        <div class="digitalClub">
-            <span class="titulos">Digital + Club Gol + PDF</span>
-            <div class="iconos">
-                <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i></i><i class="fas fa-id-card"></i>
+    
+    <div class="container-xxl">
+        <div class="row row-cols-12">
+            <div class="col-lg-4 d-flex flex-column  align-items-center align-items-sm-center mb-5 mb-sm-5 mb-md-5 align-items-lg-start">
+                <div class="digitalBasico">
+                    <span class="digitalBasico__titulo">Digital báscio + PDF</span>
+                    <div class="digitalBasico__iconos">
+                        <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <p class="digitalBasico__precio">$50<p>pago mensual<br><br>
+                    <input type="button" value="SUSCRIBIRME">
+                    <div class="digitalBasico__características">
+                        <p><i class="fas fa-check-circle"></i>Acceso ilimitado
+                        <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
+                    </div>
+                </div>       
             </div>
-            <p class="precio">$100<p>pago mensual<br><br>
-            <input type="button" value="SUSCRIBIRME">
-            <div class="características">
-                <p><i class="fas fa-check-circle"></i>Acceso ilimitado
-                <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
-                <p><i class="fas fa-check-circle"></i>Tarjeta Club Gol
-                <p><i class="fas fa-check-circle"></i>Sin publicidad emergente
+
+            <div class="col-lg-4 d-flex flex-column align-items-center align-items-sm-center mb-5 mb-sm-5 mb-md-5 align-items-lg-center">
+                <div class="digitalClub">
+                    <span class="digitalClub__titulo">Digital + Club Gol + PDF</span>
+                    <div class="digitalClub__iconos">
+                        <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i></i><i class="fas fa-id-card"></i>
+                    </div>
+                    <p class="digitalClub__precio">$100<p>pago mensual<br><br>
+                    <input type="button" value="SUSCRIBIRME">
+                    <div class="digitalClub__características">
+                        <p><i class="fas fa-check-circle"></i>Acceso ilimitado
+                        <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
+                        <p><i class="fas fa-check-circle"></i>Tarjeta Club Gol
+                        <p><i class="fas fa-check-circle"></i>Sin publicidad emergente
+                    </div>
+                </div>   
             </div>
+            
+            <div class="col-lg-4 d-flex flex-column align-items-center  align-items-sm-center  align-items-lg-end">
+                <div class="digitalDiario">
+                    <span class="digitalDiario__titulo">Diario de Domingo + Acceso digital + Club Gol</span>
+                   <div class="digitalDiario__iconos">
+                       <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i></i><i class="fas fa-id-card"></i><i class="far fa-newspaper"></i>
+                   </div>
+                   <p class="digitalDiario__precio">$120<p>pago mensual<br><br>
+                   <input type="button" value="SUSCRIBIRME">
+                   <div class="digitalDiario__características">
+                       <p><i class="fas fa-check-circle"></i>Acceso ilimitado
+                       <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
+                       <p><i class="fas fa-check-circle"></i>Contenido exclusivo
+                       <p><i class="fas fa-check-circle"></i>Tarjeta Club Gol
+                       <p><i class="fas fa-check-circle"></i>Accesos simultáneos desde cualquier dispositivo  
+                       <p><i class="fas fa-check-circle"></i>Sin publicidad emergente
+                       <p><i class="fas fa-check-circle"></i>Ejemplar de domingo en tu domicilio
+                   </div> 
+               </div>
+            </div>
+
         </div>
-        <div class="digitalDiario">
-             <span class="titulos diario">Diario de Domingo + Acceso digital + Club Gol</span>
-            <div class="iconos">
-                <i class="fas fa-mobile-alt"></i><i class="fas fa-tablet-alt"></i></i><i class="fas fa-id-card"></i><i class="far fa-newspaper"></i>
-            </div>
-            <p class="precio">$120<p>pago mensual<br><br>
-            <input type="button" value="SUSCRIBIRME">
-            <div class="características">
-                <p><i class="fas fa-check-circle"></i>Acceso ilimitado
-                <p><i class="fas fa-check-circle"></i>Edición impresa en formato PDF
-                <p><i class="fas fa-check-circle"></i>Contenido exclusivo
-                <p><i class="fas fa-check-circle"></i>Tarjeta Club Gol
-                <p><i class="fas fa-check-circle"></i>Accesos simultáneos desde cualquier dispositivo  
-                <p><i class="fas fa-check-circle"></i>Sin publicidad emergente
-                <p><i class="fas fa-check-circle"></i>Ejemplar de domingo en tu domicilio
-            </div> 
-        </div>
+    </div>
+    
+
     </div>    
 <!--Inicio nueva sección-->
 <section>
@@ -92,19 +110,31 @@
     </div>
 </section>
 <!--Fin nueva sección-->
-<!--Inicio footer-->
-<footer>
-    <div class="footSuscripción">
-        <p>Seguinos</p>
-        <ul>
-            <li><a href="https://www.facebook.com" target=_blank ><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.twitter.com" target=_blank ><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="https://www.youtube.com" target=_blank ><i class="fab fa-youtube-square"></i></a></li>
-            <li><a href="https://www.instagram.com" target=_blank ><i class="fab fa-instagram-square"></i></a></li>
-        </ul>
-		<p>&copy; Todos los derechos reservados.</p>
-    </div>
-</footer>
-<!--Fin de footer-->
+<!--inicio footer-->
+<div class="pie">
+    <footer class="footer">
+        <p class="text-footer">El Diario GOL. Fundado el 15 de marzo de 1904. Gol.com.ar. Lanzada el 21 de septiembre de 1996. Año 24. Edición N° 9107. Registro intelectual 56057581. Domicilio legal: Diario Gol 6080 – CP: X5008HKJ – Córdoba, Argentina.<br>Propietario: Diario Gol SA. Gerente General: Juan Tillard. Director: Carlos Hugo Jornet. Editor: Carlos Hugo Jornet.<br>&copy; 1996 - 2021 Todos los derechos reservados. Aviso legal.</p>
+        <div class="redes__posicion">
+            <p class="footer__p m-0">Seguinos</p>
+            <ul class="footer__ul">
+                <li><a href="https://www.facebook.com" target=_blank ><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.twitter.com" target=_blank ><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.youtube.com" target=_blank ><i class="fab fa-youtube-square"></i></a></li>
+                <li><a href="https://www.instagram.com" target=_blank ><i class="fab fa-instagram-square"></i></a></li>
+            </ul>	
+        </div>
+    </footer>
+</div>
+<!--cierre footer-->
+
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
 </body>
 </html>

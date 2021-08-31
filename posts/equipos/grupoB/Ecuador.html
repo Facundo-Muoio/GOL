@@ -6,140 +6,178 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ecuador</title>
 	 <!-- Fuentes -->
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Roboto:wght@500;900&display=swap" rel="stylesheet">	
-	 <!-- Fin fuentes -->
-	 <!-- icono -->
-	 <script src="https://kit.fontawesome.com/4dc73a2bed.js" crossorigin="anonymous"></script>
-	 <!-- Fin icono -->
-	<!-- Inicio link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');      
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Roboto:wght@900&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&family=Ubuntu:wght@700&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+	</style>	
+	<!-- Fin fuentes -->
+	<!-- icono -->
+	<script src="https://kit.fontawesome.com/4dc73a2bed.js" crossorigin="anonymous"></script>
+	<!-- Fin icono -->
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Fin Bootstrap -->
+	 <!-- Inicio link -->
 	<link rel="stylesheet"	href="../../../css/style.css"> 
 	<!-- Fin link -->
 </head>
 <body>
-	<div class="gridPaises">
-		<!--empieza el header-->	
-		<header class="headerPaises">
-			<div class="flexPaises">
-				<!--LOGO-->
-				<a class="headerPaises__a" href="../../../index.html"><h1 class="headerPaises__h1">GOL</h1></a>
-				<!--cierre LOGO-->
-				<!--inicio nav-->
-				<nav class="navPaises">
-					<ul class="navPaises__ul">
-						<li class="navPaises__li"><a class="navPaises__a" href="../../../datos/estadisticas.html"><i class="fas fa-chart-bar"></i>Estadísticas</a></li>
-						<li class="navPaises__li"><a class="navPaises__a" href="../../../datos/contacto.html"><i class="fas fa-paper-plane"></i>Contacto</a></li>
-						<li class="navPaises__li"><a class="navPaises__a" href="../../../Usuarios/Ingresar.html"><i class="fas fa-sign-in-alt"></i>Ingresar</a></li>
-						<li class="navPaises__li"><a class="navPaises__a" href="../../../Usuarios/suscribirse.html">Suscribite</a></li>
-					</ul>
-				</nav>
-				<!--cierre nav-->
+	<!-- nav -->
+	<div class="navDiv__width navDiv__color">
+		<nav class="navbar navbar-expand-sm navbar-dark">
+		  <div class="container-lg container-fluid-sm mainNav__div--width mx-auto">
+			<a class="navbar-brand" href="../../../index.html">GOL</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+			  <ul class="navbar-nav">
+				<li class="nav-item dropdown dropdown__li--display">
+				  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Paises
+				  </a>
+				  <ul class="dropdown-menu dropdown__ul--bg" aria-labelledby="navbarDropdownMenuLink">
+					<li><a class="dropdown-item" href="../grupoA/Argentina.html"><img class="escudo__size" src="../grupoA/Argentina/imgArg/afa-1.png"></a></li>
+					<li><a class="dropdown-item" href="../grupoA/Bolivia.html"><img class="escudo__size" src="../grupoA/Bolivia/imgBol/fbf-1.png"></a></li>
+					<li><a class="dropdown-item" href="../grupoA/Chile.html"><img class="escudo__size" src="../grupoA/Chile/imgChi/FFC.png"></a></li>
+					<li><a class="dropdown-item" href="../grupoA/Paraguay.html"><img class="escudo__size" src="../grupoA/Paraguay/imgPar/APF.png"></a></li>
+					<li><a class="dropdown-item" href="../grupoA/Uruguay.html"><img class="escudo__size" src="../grupoA/Uruguay/imgUru/AUF.png"></a></li>
+					<li><a class="dropdown-item" href="Brasil.html"><img class="escudo__size" src="Brasil/imgBra/cbf-2.png"></a></li>
+					<li><a class="dropdown-item" href="Colombia.html"><img class="escudo__size" src="Colombia/imgCol/fcf-1.png"></a></li>
+					<li><a class="dropdown-item" href="Ecuador.html"><img class="escudo__size" src="Ecuador/imgaEcu/fef.png"></a></li>
+					<li><a class="dropdown-item" href="Peru.html"><img class="escudo__size" src="Perú/imgPer/fpf-1.png"></a></li>
+					<li><a class="dropdown-item" href="Venezuela.html"><img class="escudo__size" src="Venezuela/imgVen/fvf-1.png"></a></li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="../../../datos/estadisticas.html"><i class="fas fa-chart-bar"></i>Estadísticas</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="../../../datos/contacto.html"><i class="fas fa-paper-plane"></i>Contacto</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link text-white" href="../../../Usuarios/Ingresar.html"><i class="fas fa-sign-in-alt"></i>Ingresar</a>
+				</li>
+				<li class="nav-item">	
+				  <a class="nav-link text-white" href="../../../Usuarios/suscribirse.html">Suscribite</a>
+				</li>
+			  </ul>
 			</div>
-			<!--inicio del segundo nav-->
-			<nav class="navPSecundario">
-				<ul class="navPSecundario__ul">
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="../grupoA/Argentina.html">Argentina</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="../grupoA/Bolivia.html">Bolivia</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="../grupoA/Chile.html">Chile</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="../grupoA/Paraguay.html">Paraguay</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="../grupoA/Uruguay.html">Uruguay</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="Brasil.html">Brasil</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="Colombia.html">Colombia</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="Ecuador.html">Ecuador</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="Peru.html">Perú</a></li>
-					<li class="navPSecundario__li"><a class="navPSecundario__a" href="Venezuela.html">Venezuela</a></li>
-				</ul>	
-			</nav>
-			<!--cierre del segundo nav-->
-		</header>
-		<!--cierre header-->
-		<!--inicio contenido-->
-		<main class="mainPaises">
-			<div class="flexCardsPaises">
-				<section class="seccionPaises">
-					<div class="Flag">
-						<img src="Ecuador/imgaEcu/flagEcuador.png" alt="Bandera de Ecuador" class="Flag__img">
+		  </div>
+		</nav>
+		<nav class="container mx-auto navSecundary">
+		  <ul class="nav justify-content-center">
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="../grupoA/Argentina.html"><img class="escudo__size" src="../grupoA/Argentina/imgArg/afa-1.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="../grupoA/Bolivia.html"><img class="escudo__size" src="../grupoA/Bolivia/imgBol/fbf-1.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="../grupoA/Chile.html"><img class="escudo__size" src="../grupoA/Chile/imgChi/FFC.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="../grupoA/Paraguay.html"><img class="escudo__size" src="../grupoA/Paraguay/imgPar/APF.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="../grupoA/Uruguay.html"><img class="escudo__size" src="../grupoA/Uruguay/imgUru/AUF.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="Brasil.html"><img class="escudo__size" src="Brasil/imgBra/cbf-2.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="Colombia.html"><img class="escudo__size" src="Colombia/imgCol/fcf-1.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="Ecuador.html"><img class="escudo__size" src="Ecuador/imgaEcu/fef.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="Peru.html"><img class="escudo__size" src="Perú/imgPer/fpf-1.png"></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link text-white navSecundary__a--fontsize" href="Venezuela.html"><img class="escudo__size" src="Venezuela/imgVen/fvf-1.png"></a>
+			</li>
+		  </ul>
+		</nav>
+	  </div>
+	<!-- fin nav  -->
+	
+	<!--inicio contenido-->
+	<main>
+		<div class="container-xxl">
+			<div class="row pais__home--bg">
+				<div class="col-12 d-flex justify-content-md-between">
+					<div class="d-flex flex-row mt-5">
+						<img class="pais__redondo" src="Ecuador/imgaEcu/ecuador-redondo.png"><span class="pais__nombre">Ecuador</span>
 					</div>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="../grupoA/Argentina/imgArg/Argentina-abrazada.jpg" alt="Equipo de la selección de Argentina" width="450px" height="300px" class="cardPaises__img">
-							<a class="section" href="../grupoA/Argentina/Articulo1.html"><h1 class="cardPaises__h1">ARGENTINA Y SU DEBUT SOÑADO</h1></a>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="Brasil/imgBra/neymar.jpg" alt="Neymar" width="350px" height="300px" class="cardPaises__img">
-							<div class="bodyCardPaises">
-								<a class="section" href="Brasil/Articulo1.html"><h2 class="bodyCardPaises__h2">Neymar</h2></a>
-								<p class="bodyCardPaises__p">bajada noticia</p>
-							</div>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="Colombia/imgCol/james-lesion.jpg" alt="James Rodriguez" width="350px" height="300px" class="cardPaises__img">
-							<div class="bodyCardPaises">
-								<a class="section" href="Colombia/Articulo1.html"><h2 class="bodyCardPaises__h2">Colombia sin James</h2></a>
-								<p class="bodyCardPaises__p">bajada noticia</p>
-							</div>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="../grupoA/Chile/imgChi/alexis-sin-copa.jpg" alt="Alexis Sanchez" width="350px" height="300px" class="cardPaises__img">
-							<div class="bodyCardPaises">
-								<a class="section" href="../grupoA/Chile/Articulo1.html"><h2 class="bodyCardPaises__h2">Alexis sin copa</h2></a>
-								<p class="bodyCardPaises__p">bajada notica</p>
-							</div>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="Perú/imgPer/tigre.jpg" alt="El tigre Gareca" width="350px" height="300px" class="cardPaises__img">		
-							<div class="bodyCardPaises">
-								<a class="section" href="Perú/Articulo1.html"><h2 class="bodyCardPaises__h2">El equipo del tigre!</h2></a>
-								<p class="bodyCardPaises__p">bajada notica</p>
-							</div>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="../grupoA/Paraguay/imgPar/romeros.png" width="350px" height="300px" class="cardPaises__img">	
-							<div class="bodyCardPaises">
-								<a class="section" href="../grupoA/Paraguay/Articulo1.html"><h2 class="bodyCardPaises__h2">¿Los romero de arranque?</h2></a>
-								<p class="bodyCardPaises__p">bajada noticia</p>
-							</div>
-						</div>
-					</article>
-					<article class="seccionPaises__art">
-						<div class="cardPaises">
-							<img src="../grupoA/Argentina/imgArg/armani-positivo-covid.jpg" alt="Franco Armani" width="350px" height="300px" class="cardPaises__img">
-							<div class="bodyCardPaises">
-								<a class="section" href="../grupoA/Argentina/Articulo1.html"><h2 class="bodyCardPaises__h2">Armani sigue dando positivo</h2></a>
-								<p class="bodyCardPaises__p">bajada noticia</p>
-							</div>
-						</div>
-					</article>
-				</section>
+					<img class="pais__escudo" src="Ecuador/imgaEcu/ecuador-escudo.png">
+				</div>
+				<div class="col-12 col-sm-12 col-lg-6">
+					<img class="pais__img" src="Ecuador/imgaEcu/ecuador-home.jpg">
+				</div>
+				<div class="col-12 col-sm-12 col-lg-6 d-flex flex-column justify-content-between">
+					<p class="pais__p">La Selección de Ecuador, de nuevo bajo el mando del entrenador colombiano Hernán Darío Gómez, buscará en Brasil su primer título de la Copa América, torneo en el que su mejor participación fue en la edición de 1993, terminando en el cuarto puesto.</p>
+					<p class="pais__p">Junto con Venezuela, Ecuador es la única selección que no ha ganado la competencia continental, por lo que supone este torneo un gran reto para el combinado tricolor.</p>
+				</div>
+				<div class="col-12 d-flex justify-content-center my-5">
+					<div class="pais__players--bg">
+						<img class="pais__players--bg" src="Ecuador/imgaEcu/convocados.jpg">
+					</div>
+				</div>
 			</div>
-		</main>
-		<!--cierre contenido-->
-		<!--inicio footer-->
-		<footer class="footPaises">
-			<p class="footPaises__p">Seguinos</p>
-			<ul class="redesPaises">
-				<li class="redesPaises__li"><a class="redesPaises__a" href="https://www.facebook.com" target=_blank ><i class="fab fa-facebook-square redesPaises__i"></i></a></li>
-				<li class="redesPaises__li"><a class="redesPaises__a" href="https://www.twitter.com" target=_blank ><i class="fab fa-twitter-square redesPaises__i"></i></a></li>
-				<li class="redesPaises__li"><a class="redesPaises__a" href="https://www.youtube.com" target=_blank ><i class="fab fa-youtube-square redesPaises__i"></i></a></li>
-				<li class="redesPaises__li"><a class="redesPaises__a" href="https://www.instagram.com" target=_blank ><i class="fab fa-instagram-square redesPaises__i"></i></a></li>
-			</ul>
-			<p class="footPaises__p">&copy;Todos los derechos reservados.</p>
+		</div>
+	</main>
+	<!--cierre contenido-->
+	
+	<!--inicio footer-->
+	<div class="pie">
+		<footer class="footer">
+			<p class="text-footer">El Diario GOL. Fundado el 15 de marzo de 1904. Gol.com.ar. Lanzada el 21 de septiembre de 1996. Año 24. Edición N° 9107. Registro intelectual 56057581. Domicilio legal: Diario Gol 6080 – CP: X5008HKJ – Córdoba, Argentina.<br>Propietario: Diario Gol SA. Gerente General: Juan Tillard. Director: Carlos Hugo Jornet. Editor: Carlos Hugo Jornet.<br>&copy; 1996 - 2021 Todos los derechos reservados. Aviso legal.</p>
+            <div class="redes__posicion">
+				<p class="footer__p m-0">Seguinos</p>
+				<ul class="footer__ul">
+					<li><a href="https://www.facebook.com" target=_blank ><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="https://www.twitter.com" target=_blank ><i class="fab fa-twitter-square"></i></a></li>
+					<li><a href="https://www.youtube.com" target=_blank ><i class="fab fa-youtube-square"></i></a></li>
+					<li><a href="https://www.instagram.com" target=_blank ><i class="fab fa-instagram-square"></i></a></li>
+				</ul>	
+			</div>
 		</footer>
-		<!--cierre footer-->
 	</div>
+	<!--cierre footer-->
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
 </body>
 </html>
-
 
 

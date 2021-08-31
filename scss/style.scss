@@ -5,7 +5,7 @@
 }
 
 .dropdown__ul--bg{
-    background-color: rgb(10, 38, 116);
+    background-color:rgb(14, 51, 134);
 }
 
 .dropdown-item{
@@ -18,7 +18,8 @@
 }
 
 .navDiv__color{
-    background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
+    background-image: url(../img-publicidades/abstract.jpg);
+    background-size: cover;
 }
 
 .body__bg--background{
@@ -91,38 +92,14 @@
     border-radius:4px;
     }
 
-    .nav-item:hover{
-    background-color: rgb(10, 38, 116);
+    .nav-item:hover a{
+        color:#efb810 !important;
     }
 
-    .Publicidad__div--heigth{
-        height: 120px;
-    }
-
-    .Publicidad__a--size{
-        height: 100px;
-        width: 100%;
-    }
-
-    .Publicidad__a--background{
-        background: url(https://www.totalmedios.com/img/noticias/2021/05/6091359308f81__838x390.jpg) no-repeat center;
-        background-size: cover;
-    }
-    
-    .nPrincipal__div--background{
-        background: url(https://media.tycsports.com/files/2021/07/11/305466/argentina-formacion_1440x810_wmk.jpg?v=1) no-repeat center;
-        background-size: cover;
-    }
-
-    .nPrincipal__div--size{
-        width: 100%;
-        height: 400px;
-    }
-
-    .nPrincipal__h2--propiedades{
-        color: white;
-        margin: 0px;
-        font-size: 30px;
+    .escudo__size{
+        width: auto;
+        height: 50px;
+        transition: scale 0.5s;
     }
 
     
@@ -130,36 +107,6 @@
         margin-right: 10px;
     }
 
-
-    .card{
-        margin-top: 15px;
-        box-shadow: 0px 0px 10px grey;
-        border-radius: 4px;
-        border:none;
-        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) 
-    }
-
-
-    .card__resaltante--img{
-        width: 100%;
-    }
-
-    .card p{
-        font-size: 14px;
-        color: black;
-        line-height: 14px;
-        color:white;
-    }
-
-    .card h2{
-        line-height: 17px;
-        font-size: 16px;
-        color:white;
-    }
-
-    .card__a--decoration{
-        text-decoration: none;
-    }
 
     .nav-link{
         font-size: 14px;
@@ -175,49 +122,346 @@
         height: auto;
     }
 
-    .table__caption--propiedades{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
-        text-align: center;
-        color: white;
+    .principal__div--propiedades{
+        margin-left:0;
+        border-top: 2px solid rgb(14, 51, 134);
+        border-bottom: 2px solid rgb(14, 51, 134);
     }
 
-    .table__th--parColor{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
-        color: white;
-    }    
+    .principal__pais{
+        font-family: Roboto,Arial, Helvetica, sans-serif;
+        font-size:16px;
+        font-weight:900;
+        color: rgb(14, 51, 134);
+    }
 
-    .table__th--imparColor{
-        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)!important;;
+    .principal__img{
+        width:100vw;
+    }
+
+    .principal__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 100vw;
+        font-size:36px;
+    }
+
+    .principal__bajada{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size:18px;
+    }
+
+    .principal__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .rectangulo{
         color:black;
+        width:100vw;
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        margin-bottom: 2rem;
+    }
+      
+    .rectangulo__body{
+        position:relative;
+        bottom:70px;
+        font-family: Roboto Slab, arial, sans-serif;
+        font-weight: 900;
+        font-size:16px;
+        margin:18px 0px;
+    }
+      
+    .img__card{
+        width:100%;
+        min-height:210px;
+     }
+      
+    .redondo{
+        height:60px;
+        width:auto;
+        border-radius:40px;
+        position:relative;
+        bottom:60px;
+    }
+      
+    .pais p{
+        background-color: rgba(14, 51, 134,1);
+        display:inline;
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 900;
+        font-size:10px;
+        padding:1px 4px;
+        color:white;
+        position:absolute;
+    }
+      
+     .autor{
+        background-color: rgba(14, 51, 134,1);
+        color:white;
+        padding-left:60px;
+        position:relative;
+        font-family: Roboto,arial,sans-serif;
+        font-size:14px;
+        background-image: url(../img-publicidades/bg-copa.jpg);
+        background-size: 300px;
+    }
+      
+      
+    .rectangulo__titulo{
+          font-size:24px;
+          font-family: Ubuntu,arial,sans-serif;
+          font-weight: 700;
+    }
+      
+    .rectangulo__bajada{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:300;
+        margin:0px 0px;
+        font-size: 16px;
+    }
+      
+    .redaccion{
+        color:rgb(14, 51, 134);
+        font-family:Roboto,arial,sans-serif;
+        font-weight:bold;
+        margin-top: 12px;
+        border-bottom: 2px solid rgb(14, 51, 134);
+        font-size: 12px;
+    }
+      
+    .rectangulo:hover .rectangulo__titulo{
+        text-decoration:underline;
     }
 
-    .publicidades2{
-        width: 100vw;
+    .margin__row--size{
+        margin:32px 0px 32px 0px;
+    }
+    
+    .margin-bot{
+        margin-bottom: 32px;
+    }
+
+    .horizontal__img{
+        width: 100%;
         height: auto;
     }
 
-    .pie{
-        background-color: rgb(14, 51, 134);
+    .horizontal__div--propiedades{
+        width: 100%;
+        height: 180px;
+        margin-left: 8px;
+    }
+
+    .horizontal__pais{
+        font-family: Roboto,arial,sans-serif;
+        font-weight: 900;
+        color: rgb(14, 51, 134);
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .horizontal__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .horizontal__bajada{
+        font-family:Roboto,Arial, Helvetica, sans-serif;
+        font-weight:400;
+        font-size: 16px;
+        margin-bottom:2px;
+    }
+
+    .horizontal__redaccion{
+        font-family:Roboto,arial,sans-serif;
+        font-weight:bold;
+        margin-top: 12px;
+        color: rgb(14, 51, 134);
+        font-size: 12px;
+        margin-top:5px;
+    }
+
+    .tsize{
+        width: 100%;
+        height: auto;
+    }
+    .grupoA__caption--propiedades{
+        color: rgb(14, 51, 134);
+        padding-top: 0px;
+    }
+    .grupoB__caption--propiedades{
+        color: rgb(14, 51, 134);
+    }
+
+    .tabla__grupos--img{
+        width: 20px;
+        height: auto;
+        position: relative;
+        bottom: 2px;
+        margin-right: 4px;
+    }
+
+    .rectanguloBig{
+        width: 100%;
+        height: auto;
+        background-image: linear-gradient(rgb(14, 51, 134), rgb(8, 29, 80), rgb(10, 40, 110),rgb(5, 17, 49));
         color: white;
-        text-align: center;
-        width: 100vw;
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    .rectanguloBig__body{
+        padding-left: 16px;
+    }
+
+    .rectanguloBig__img{
+        width:100%;
+        border-radius:50px 0px 0px 0px;
+    }
+
+
+    .rectanguloBig__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size:36px;
+    }
+
+    .rectanguloBig__bajada{
+        font-family:'Titillium Web', sans-serif;;
+        font-weight: 400;
+        font-size:16px;
+    }
+
+    .rectanguloBig__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: white; 
+    }
+
+    .rectanguloSmall{
+        width: 240px;
+        border-bottom: 2px solid rgb(14, 51, 134);
+        display: none;
+    }
+
+    .rectanguloSmall__pais p{
+        font-family: Roboto,arial,sans-serif;
+        font-weight: bold;
+        color:white;
+        font-size:10px;
         position: absolute;
-        bottom:fixed;
     }
 
-    .pie ul {
+    .rectanguloSmall__img--card{
+        width: 100%;
+        height: 141px;
+    }
+
+
+    .rectanguloSmall__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size:22px;
+    }
+
+    .rectanguloSmall__bajada{
+        font-family:'Titillium Web', sans-serif;;
+        font-weight: 400;
+        font-size:14px;
+    }
+
+    .rectanguloSmall__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: bold; 
+        margin-bottom: 0px;
+        color: rgb(14, 51, 134);
+    }
+
+    .galeria__background{
+        background-image:url(../img-publicidades/abstract.jpg);
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .videoPrincipal{
+        width: 100%;
+    }
+
+
+    .videos__video{
+        font-family: Roboto Slab,arial;
+        font-weight: 900;
+        font-size: 24px;
+        color:white;
+        border-bottom: 2px solid white;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+    .videos__sugerencias--p{ 
+      display: none;
+    }
+
+    .videos__goles{
+        display:none;
+    }
+
+    .videos__sugerencias{
+        display: none;
+    }
+
+    .videoSecundario{
+        display: none;
+    }
+
+    .columnaizq__posicion{
+        position: relative;
+        top:10px;
+    }
+
+    .columnadrc__posicion{
+        display: none;
+    }
+
+
+    .seccion__h3--propiedades{
+        border-bottom:3px solid rgb(14, 51, 134);
+        font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .lomasleido__borde{
+        border-bottom:3px solid rgb(14, 51, 134)
+    }
+
+    .votacion{
+       display: none;
+    }
+
+
+    .publicidad__fibertel{
+        display:none;   
+    }
+
+    .footer__ul{
         display: flex;
-        flex-direction: row;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
         justify-content: center;
-        padding:0px;
     }
 
-    .pie i{
-        color: white;
-        font-size: 30px;
-        padding: 10px;
-    }
- 
     /* inicio sesión */
 
      div.inicioSesión{
@@ -550,6 +794,278 @@
   
       /* fin restablecer */
 
+      /* Suscribirse */
+      .headerSuscripción{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:url(../img-publicidades/abstract.jpg);
+        color:white;
+        width: 100%;
+        height: auto;
+    }
+    
+    .headerSuscripción a{
+        color:white;
+        text-decoration:none;
+    }
+    
+    .headerSuscripción a h1{
+        font-size: 50px;
+    }
+    
+    .titulo:hover{
+        color:white;
+    }
+
+    .imgContenedor{
+        width: 100%;
+        height: auto;
+        background:url(https://cdn.pixabay.com/photo/2017/11/05/19/41/stadium-2921657_960_720.jpg) no-repeat center;
+        background-size:cover;
+        margin-bottom: 48px;
+    }
+    
+    div.subsSus{
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 300px;
+        background-color: rgba(14, 51, 134, 0.5);
+        text-align: center;
+        color: white;
+    }
+    
+    
+    .subSus{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom:20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:50px;
+    }
+    
+    .pSus{
+        font-size:16px;
+        font-weight:bold;
+    }
+
+    .digitalBasico{
+        width: 300px;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .digitalBasico__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalBasico__iconos i{
+        font-size:70px;
+        margin:16px 12px;
+    }
+
+    .digitalBasico__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalBasico__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .digitalClub{
+        width: 300px;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .digitalClub__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalClub__iconos i{
+        font-size:70px;
+        margin:16px 12px;
+    }
+    
+    
+    .digitalClub__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalClub__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .digitalDiario{
+        width:300px;
+        height: 800px;
+        background-color: black;
+        color:white;
+        font-family: Roboto, arial, sans-serif;
+        text-align: center;
+        border-radius:4px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .digitalDiario__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalDiario__iconos i{
+        font-size:39px;
+        margin:16px 12px;
+    }
+    
+    .digitalDiario__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalDiario__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .digitalBasico input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    
+    .digitalBasico input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    .digitalClub input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top:25px;
+    }
+    
+    .digitalClub input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    .digitalDiario input{
+        background-color: yellow;
+        padding:10px;
+        border: 1px solid yellow;
+        border-radius: 4px;
+        width: 90%;
+        font-weight:bold;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+    }
+    
+    .digitalDiario input:hover{
+        cursor:pointer;
+        background-color:#ffea2e;
+    }
+    
+    
+    .diario{
+        margin-bottom: 15px;
+    }
+    
+    .empSus{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color:white;
+        font-size:18px;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        border-radius: 10px;
+    }
+    
+    fieldset{
+        border-radius: 10px;
+        padding: 20px 10px;
+        background-color: white;
+        color:black;
+        border:1px solid black;
+    }
+    
+    legend{
+        text-align: center;
+        border-radius:10px;
+        border-color:black;
+        background-color: white;
+        color:black;
+        padding:5px;
+    }
+    
+    .fa-check-square{
+        color:green;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+    
+    .mailEmpresa{
+        color:#00b4ff;
+    }
+
+    .redes__posicion ul{
+        width: 100%;
+    }
+
+    .footer__ul{
+        display: flex;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /* Fin suscribirse */  
+
+
     /* contacto */
     .backCon{
         background-color: #fefefe;
@@ -559,7 +1075,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:rgba(14, 51, 134,1);
+        background: url(../img-publicidades/abstract.jpg);
         height: auto;
     }
     
@@ -725,13 +1241,21 @@
         height: auto;
     } 
 
+    .footer__ul{
+        display: flex;
+        width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+
     /* fin contacto */    
     /* estadísticas */
     
     .headerEst{
         width: 100%;
         height: auto;
-        background-color: rgb(15,51,134);
+        background:url(../img-publicidades/abstract.jpg);;
     }
 
     .headerEst h1{
@@ -909,26 +1433,104 @@
         background-color: #efefef;
     }
 
-    .pieEst{
+    .footer__ul{
         display: flex;
-        flex-direction: row;
-        background-color: rgb(15, 51, 134);
         width: 100%;
-        color: white;
-        justify-content: center;
+        padding-left: 0px;
         text-align: center;
-    }
-    
-    .pieEst footer ul{
-        display: flex;
+        justify-content: center;
     }
 
-    .pieEst footer i{
-        font-size: 30px;
+    .pie{
+        background: url(../img-publicidades/abstract.jpg) no-repeat;
+        background-size: cover;
         color: white;
-        padding: 10px;
+        width: 100vw;
+        margin-top:2em;
+        margin-bottom: 0px;
     }
+
+    .text-footer{
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .pie i{
+        color: white;
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .fab{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__p{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .redes__posicion{
+        text-align: center;
+    }
+
+    .footerDerechos{
+        margin-bottom:0px;
+    }
+
     /* fin estadísticas */
+
+    /* paises */
+
+    .pais__nombre{
+        font-family: Ubuntu,arial,sans-serif;
+        font-size:48px;
+        font-weight:100;
+        position: relative;
+        top: 45px;
+    }
+
+    .pais__escudo{
+        width: 236px;
+        height:auto;
+    }
+
+    .pais__redondo{
+        width: 150px;
+        height: 150px;
+    }
+
+     .pais__img{
+        width: 100%;
+        height: auto;
+    }
+
+    .pais__p{
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    
+    .pais__players--bg{
+        width:100vw;
+        height:auto;
+    }
+
     
 
 }
@@ -966,14 +1568,18 @@
         border-radius:4px;
     }
 
+    .nav-item a{
+        font-size: 20px;
+    }
+
     .escudo__size{
         width: auto;
         height: 50px;
         transition: scale 0.5s;
     }
 
-    .nav-item:hover{
-        background-color: rgb(10, 38, 116);
+    .nav-item:hover a{
+        color:#efb810 !important;
     }
 
     
@@ -982,16 +1588,16 @@
     }
 
     .Publicidad__div--heigth{
-        height: 100px;
+        height: 230px;
     }
 
     .Publicidad__a--size{
-        height: 100px;
+        height: 230px;
         width: 100%;
     }
 
     .Publicidad__a--background{
-        background: url(https://www.totalmedios.com/img/noticias/2021/05/6091359308f81__838x390.jpg) no-repeat center;
+        background: url(../img-publicidades/banner-adidas.jpg) no-repeat center;
         background-size: cover;
     }
 
@@ -1017,128 +1623,568 @@
         margin-right: 10px;
     }
 
-    
-    .card-img-top{
-        width: 100%;
-        min-width: auto;
-        height:210px;
-        min-height: auto;
+    .main__size{
+        width: 1155px;
+        margin:0 auto;
+        background-color: white;
     }
 
-    .armani, .alexis{
-        max-width:100%;
-        max-height: 210px;
-        min-width:auto;
-        min-height: auto;
+    .principal__div--propiedades{
+        margin-left:1em;
+        border-top: 2px solid rgb(14, 51, 134);
+        border-bottom: 2px solid rgb(14, 51, 134);
     }
 
-    .card{
-        margin-top: 15px;
-        box-shadow: 0px 0px 10px grey;
-        border-radius: 4px;
-        border:none;
-        transition: 0.2s;
-        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ; 
-    }
-  
-    .card:hover{
-        box-shadow:0px 0px 20px rgb(20, 20, 20);
-        cursor:pointer;
-    }
-    
-    .card:hover h2{
-        text-decoration:underline;
+    .principal__pais{
+        font-family: Roboto,Arial, Helvetica, sans-serif;
+        font-size:16px;
+        font-weight:900;
+        color: rgb(14, 51, 134);
     }
 
-    .card p{
+    .principal__img{
+        width:577.5px;
+    }
+
+    .principal__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size:36px;
+    }
+
+    .principal__bajada{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size:18px;
+    }
+
+    .principal__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .rectangulo{
+        color:black;
+        width:320px;
+        height:375px;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        margin-bottom: 2rem;
+      }
+      
+      .rectangulo__body{
+        position:relative;
+        bottom:70px;
+        font-family: Roboto Slab, arial, sans-serif;
+        font-weight: 900;
+        font-size:16px;
+        margin:18px 0px;
+      }
+      
+      .img__card{
+        width:100%;
+        min-height:210px;
+      }
+      
+      .redondo{
+        height:60px;
+        width:auto;
+        border-radius:40px;
+        position:relative;
+        bottom:60px;
+      }
+      
+      .pais p{
+        background-color: rgba(14, 51, 134,1);
+        display:inline;
+        font-family: Roboto, arial, sans-serif;
+        font-weight: 900;
+        font-size:10px;
+        padding:1px 4px;
+        color:white;
+        position:absolute;
+      }
+      
+      .autor{
+        background-color: rgba(14, 51, 134,1);
+        color:white;
+        padding-left:60px;
+        position:relative;
+        font-family: Roboto,arial,sans-serif;
+        font-size:14px;
+        background-image: url(../img-publicidades/bg-copa.jpg);
+        background-size: 300px;
+      }
+      
+      
+      .rectangulo__titulo{
+          font-size:24px;
+          font-family: Ubuntu,arial,sans-serif;
+          font-weight: 700;
+      }
+      
+      .rectangulo__bajada{
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:300;
+        margin:0px 0px;
         font-size: 14px;
-        color: white;
-        line-height: 17px;
-    }
-
-    .card h2{
-        line-height: 17px;
-        font-size: 18px;
-        color: white;
-    }
-
-    .card__a--decoration{
-        text-decoration: none;
-    }
-
-    .card__resaltante{
-        height: 660px;
-        width: 100%;
-        min-width:0;
-        min-height: 374px;
-    }
-
-    .card__resaltante--img{
-        height: 420px;
-        width: 100%;
-        min-width:auto;
-        min-height:auto;
-    }
-
-    .card__aladoResaltante{
-        max-width: 300px; 
-        min-width: 0;
-        min-height: auto;
-    }
-
-    .seccion__h3--propiedades{
-        border-bottom:3px solid black;
-    }
+      }
+      
+      .redaccion{
+        color:rgb(14, 51, 134);
+        font-family:Roboto,arial,sans-serif;
+        font-weight:bold;
+        margin-top: 12px;
+        border-bottom: 2px solid rgb(14, 51, 134);
+        font-size: 12px;
+      }
+      
+      .rectangulo:hover .rectangulo__titulo{
+        text-decoration:underline;
+      }
 
     .margin__row--size{
-        margin:80px 0px;
+        margin:32px 0px 32px 0px;
+    }
+    
+    .margin-bot{
+        margin-bottom: 32px;
+    }
+
+    .horizontal__img{
+        width: 310px;
+        height: 180px;
+    }
+
+    .horizontal__div--propiedades{
+        width: 310px;
+        height: 180px;
+        margin-left: 8px;
+        border-right: 2px solid rgb(14, 51, 134);
+    }
+
+    .horizontal__pais{
+        font-family: Roboto,arial,sans-serif;
+        font-weight: 900;
+        color: rgb(14, 51, 134);
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .horizontal__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .horizontal__bajada{
+        font-family:Roboto,Arial, Helvetica, sans-serif;
+        font-weight:400;
+        font-size: 12px;
+        margin-bottom:2px;
+    }
+
+    .horizontal__redaccion{
+        font-family:Roboto,arial,sans-serif;
+        font-weight:bold;
+        margin-top: 12px;
+        color: rgb(14, 51, 134);
+        font-size: 12px;
+        margin-top:5px;
     }
 
     .tsize{
         width: 100%;
         height: auto;
     }
-
-    .table__caption--propiedades{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
-        text-align: center;
-        color: white;
+    .grupoA__caption--propiedades{
+        color: rgb(14, 51, 134);
+        padding-top: 0px;
+    }
+    .grupoB__caption--propiedades{
+        color: rgb(14, 51, 134);
     }
 
-    .table__th--parColor{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% );
-        color: white;
-    }    
+    .tabla__grupos--img{
+        width: 20px;
+        height: auto;
+        position: relative;
+        bottom: 2px;
+        margin-right: 4px;
+    }
 
-    .table__th--imparColor{
-        background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)!important;;
-        color:black;
+    .rectanguloBig{
+        width: 577px;
+        height: 687px;
+        background-image: linear-gradient(rgb(14, 51, 134), rgb(8, 29, 80), rgb(10, 40, 110),rgb(5, 17, 49));
+        color: white;
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    .rectanguloBig__body{
+        padding-left: 16px;
+    }
+
+    .rectanguloBig__img{
+        width:100%;
+        border-radius:50px 0px 0px 0px;
+    }
+
+
+    .rectanguloBig__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size:36px;
+    }
+
+    .rectanguloBig__bajada{
+        font-family:'Titillium Web', sans-serif;;
+        font-weight: 400;
+        font-size:16px;
+    }
+
+    .rectanguloBig__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        color: white; 
+    }
+
+    .rectanguloSmall{
+        width: 240px;
+        border-bottom: 2px solid rgb(14, 51, 134);
+    }
+
+    .rectanguloSmall__pais p{
+        font-family: Roboto,arial,sans-serif;
+        font-weight: bold;
+        color:white;
+        font-size:10px;
+        position: absolute;
+    }
+
+    .rectanguloSmall__img--card{
+        width: 100%;
+        height: 141px;
+    }
+
+
+    .rectanguloSmall__titulo{
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        font-size:22px;
+    }
+
+    .rectanguloSmall__bajada{
+        font-family:'Titillium Web', sans-serif;;
+        font-weight: 400;
+        font-size:14px;
+    }
+
+    .rectanguloSmall__redaccion{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        font-weight: bold; 
+        margin-bottom: 0px;
+        color: rgb(14, 51, 134);
+    }
+
+    .galeria__background{
+        background-image:url(../img-publicidades/abstract.jpg);
+        background-size: contain;
+        width: 1155px;
+        height: 580px;
+    }
+
+    .videoPrincipal{
+        width: 640px;
+    }
+
+
+    .videos__video{
+        font-family: Roboto Slab,arial;
+        font-weight: 900;
+        font-size: 24px;
+        color:white;
+        border-bottom: 2px solid white;
+        width: 640px;
+        margin-bottom: 5px;
+    }
+
+
+    .videos__sugerencias--p{
+        font-family: Roboto Slab,arial;
+        font-weight: 900;
+        font-size: 24px;
+        color:white;
+        border-bottom: 2px solid white;
+        width: 640px;
+        margin: 16px 0 0 0;
+    }
+
+    .videos__goles{
+        font-family: Roboto Slab,arial;
+        font-weight: 900;
+        font-size: 24px;
+        color:white;
+        border-bottom: 2px solid white;
+        margin:0px;
+        width: 422px;
+        position: relative;
+        top:8px;
+    }
+
+    .videos__sugerencias{
+        width: 210px;
+        height: 100px;
+        margin-top: 5px;
+    }
+
+    .videoSecundario{
+        width: 210px;
+        height: 100px;
+    }
+
+    .columnaizq__posicion{
+        position: relative;
+        top:10px;
+    }
+
+    .columnadrc__posicion{
+        position: relative;
+        top:15px;
+        height: 321px;
+        margin-top: 0;
+    }
+
+    .cardXs{
+        border:none;
+        width: 188px;
+        padding:0px;
+        height:272px;
+        position: relative;
+    }
+
+    .cardXs__numero{
+        position:absolute;
+        top:0;
+        right:6px;
+        color: white;
+        font-size:24px;
+        font-family: Roboto,arial,sans-serif;
+        font-weight: 900;
+    }
+
+    .cardXs__img{
+        min-height: 125.32px;
+        width: 100%;
+    }
+
+    .cardXs__pais{
+        font-family: Roboto,arial,sans-serif;
+        font-weight: 900;
+        font-size:12px;
+        padding:1px 4px;
+        color:rgb(14, 51, 134);
+        margin:0px;
+    }
+
+    .cardXs__titulo{
+        font-size: 16px;
+        font-family: Ubuntu,arial,sans-serif;
+        font-weight: 700;
+        margin:0px;
+    }
+
+    .cardXs__redaccion{
+        color:rgb(14, 51, 134);
+        font-family:Roboto,arial,sans-serif;
+        font-weight:bold;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    .seccion__h3--propiedades{
+        border-bottom:3px solid rgb(14, 51, 134);
+        font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+    }
+
+    .lomasleido__borde{
+        border-bottom:3px solid rgb(14, 51, 134)
+    }
+
+    .votacion{
+        width: 320px;
+        height: 337px;  
+        background:url(../posts/equipos/grupoA/Argentina/imgArg/messi-votacion.jpg)no-repeat;
+        background-size:cover;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .votacion__pregunta{
+        text-align: center;
+        font-family:Ubuntu,arial, sans-serif;;
+        font-weight: 700;
+        font-size:18px;
+        padding:8px 16px;
+    }
+
+
+    .votacion__button{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        height: 40px;
+        width: 80%;
+        border:1px solid #ddd;
+        margin-bottom: 16px;
+        opacity: 0.5;
+        margin:0 auto 0 auto;
+    }
+
+    .votacion__button2{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 20px;
+        height: 40px;
+        width: 80%;
+        border:1px solid #ddd;
+        margin-bottom: 16px;
+        opacity: 0.5;
+        margin:0 auto 0 auto;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .votacion__button span{
+        text-align: center;
+        font-family:Roboto,arial, sans-serif;;
+        font-weight: 900;
+        font-size:16px;
+    }
+
+    .votacion__button2 span{
+        text-align: center;
+        font-family:Roboto,arial, sans-serif;;
+        font-weight: 900;
+        font-size:16px;
+    }
+
+    .progreso1{
+        width: 156px;
+        height: 40px;
+        background-color:rgba(14, 51, 134,.7);
+        border-radius: 20px 0 0 20px;
+        position: relative;
+        top:53px;
+        left: 32px;
+    }
+
+    .progreso2{
+        width: 39px;
+        height: 40px;
+        background-color:rgba(14, 51, 134,.7);
+        border-radius: 20px 0 0 20px;
+        position: relative;
+        top:4px;
+        left: 32px;
+    }
+
+    .votacion__votos{
+        text-align: center;
+    }
+
+    .votacion__votos span{
+        font-family: Roboto,arial,sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style:normal;
+        text-align: center;
+        margin-left: 6px;
+    }
+
+
+    .votacion__button:hover{
+        border:solid 1px #ddd;
+    }
+
+    .votacion__button2:hover{
+        border:solid 1px #ddd;
+    }
+
+    .publicidad__fibertel{
+        width: 320px;
+        height: 446px;
+        background-image: url(../img-publicidades/fibertel.jpg);
+        background-size: contain;
     }
 
     .pie{
-        background-color: rgb(14, 51, 134);
+        background: url(../img-publicidades/abstract.jpg) no-repeat;
+        background-size: cover;
         color: white;
-        text-align: center;
         width: 100vw;
-        position: absolute;
-        bottom:fixed;
+        margin-top:2em;
+        margin-bottom: 0px;
     }
 
-    .pie ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding:0px;
+    .text-footer{
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        text-align: center;
     }
 
     .pie i{
         color: white;
-        font-size: 50px;
-        padding: 10px;
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
     }
 
-    .footDerechos{
-        margin:none;
+    .fab{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__p{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .redes__posicion{
+        text-align: center;
+    }
+
+    .footerDerechos{
+        margin-bottom:0px;
+    }
+
+    .footer__ul{
+        width: 190px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        padding-left:0px;
     }
 
     /* <!-- Inicio css de inicio sesión --> */
@@ -1530,7 +2576,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(14, 51, 134, 1);
+        background:url(../img-publicidades/abstract.jpg);
         color:white;
         width: 100%;
         height: auto;
@@ -1544,12 +2590,18 @@
     .headerSuscripción a h1{
         font-size: 50px;
     }
+
+    .titulo:hover{
+        color:white;
+    }
+
     
     .imgContenedor{
         width: 100%;
         height: auto;
         background:url(https://cdn.pixabay.com/photo/2017/11/05/19/41/stadium-2921657_960_720.jpg) no-repeat center;
         background-size:cover;
+        margin-bottom: 48px;
     }
     
     div.subsSus{
@@ -1574,23 +2626,9 @@
         font-size:16px;
         font-weight:bold;
     }
-    
-    
-    .contenedorSus{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        position:relative;
-        bottom:250px;
-        width: 80%;
-        min-width: 769px;
-        margin: auto;
-    }
-    
+
     .digitalBasico{
-        display: flex;
-        flex-flow: column wrap;
-        width:24%;
+        width: 300px;
         height: 800px;
         background-color: black;
         color:white;
@@ -1598,12 +2636,34 @@
         text-align: center;
         border-radius:4px;
         box-shadow: 0 0 10px black;
+    }
+
+    .digitalBasico__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalBasico__iconos i{
+        font-size:70px;
+        margin:16px 12px;
+    }
+
+    .digitalBasico__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalBasico__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
     }
     
     .digitalClub{
-        display:flex;
-        flex-flow: column wrap;
-        width:24%;
+        width: 300px;
         height: 800px;
         background-color: black;
         color:white;
@@ -1612,11 +2672,34 @@
         border-radius:4px;
         box-shadow: 0 0 10px black;
     }
+
+    .digitalClub__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalClub__iconos i{
+        font-size:70px;
+        margin:16px 12px;
+    }
     
+    
+    .digitalClub__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalClub__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
     .digitalDiario{
-        display:flex;
-        flex-flow: column wrap;
-        width:24%;
+        width:300px;
         height: 800px;
         background-color: black;
         color:white;
@@ -1626,16 +2709,29 @@
         margin-bottom: 50px;
         box-shadow: 0 0 10px black;
     }
-    
-    div.iconos{
-        display: flex;
-        flex-flow:row wrap;
-        justify-content: space-evenly;
-        margin-bottom:50px;
+
+    .digitalDiario__titulo{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        padding: 24px;
+    }
+
+    .digitalDiario__iconos i{
+        font-size:39px;
+        margin:16px 12px;
     }
     
-    .iconos i{
-        font-size:70px;
+    .digitalDiario__precio{
+        font-family: 'Times New Roman', Times, serif,arial,serif;
+        font-size: 40px;
+        font-weight:bold;
+    }
+
+    .digitalDiario__características{
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
     }
 
     .digitalBasico input{
@@ -1689,28 +2785,6 @@
         background-color:#ffea2e;
     }
     
-    .características p{
-        text-align: left;
-        margin-left: 10px;
-        font-size: 14px;
-    }
-    
-    .características p i{
-        font-size: 14px;
-    }
-    
-    .precio{
-        font-family: 'Times New Roman', Times, serif,arial,serif;
-        font-size: 40px;
-        font-weight:bold;
-    }
-    
-    .titulos{
-        font-family: 'Times New Roman', Times, serif,arial,serif;
-        font-size:20px;
-        margin-bottom: 50px;
-        padding: 20px;
-    }
     
     .diario{
         margin-bottom: 15px;
@@ -1723,8 +2797,9 @@
         background-color:white;
         font-size:18px;
         text-align: center;
-        position:relative;
-        bottom:200px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        border-radius: 10px;
     }
     
     fieldset{
@@ -1732,13 +2807,13 @@
         padding: 20px 10px;
         background-color: white;
         color:black;
-        border: 1px solid black;
+        border:1px solid black;
     }
     
     legend{
         text-align: center;
-       
         border-radius:10px;
+        border-color:black;
         background-color: white;
         color:black;
         padding:5px;
@@ -1746,33 +2821,73 @@
     
     .fa-check-square{
         color:green;
+        margin-left: 5px;
+        margin-right: 2px;
     }
     
     .mailEmpresa{
         color:#00b4ff;
     }
-    
-    .footSuscripción{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(14, 51, 134);
-        color:white;;
-        padding: 25px;
-    }
-    
-    .footSuscripción ul i{
+
+    .pie{
+        background: url(../img-publicidades/abstract.jpg) no-repeat;
+        background-size: cover;
         color: white;
-        font-size: 50px;
-        padding: 10px;
+        width: 100vw;
+        margin-top:2em;
+        margin-bottom: 0px;
     }
 
-    .footSuscripción ul{
+    .text-footer{
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .pie i{
+        color: white;
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .fab{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__p{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .redes__posicion{
+        text-align: center;
+    }
+
+    .footerDerechos{
+        margin-bottom:0px;
+    }
+
+    .footer__ul{
+        width: 190px;
+        margin-right: auto;
+        margin-left: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } 
+        padding-left:0px;
+    }
     /* Fin suscribirse */
 
     /* contacto */
@@ -1784,7 +2899,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:rgba(14, 51, 134,1);
+        background: url(../img-publicidades/abstract.jpg);
         height: auto;
     }
     
@@ -1951,13 +3066,73 @@
         width: 100%;
     }
 
+    .pie{
+        background: url(../img-publicidades/abstract.jpg) no-repeat;
+        background-size: cover;
+        color: white;
+        width: 100vw;
+        margin-top:2em;
+        margin-bottom: 0px;
+    }
+
+    .text-footer{
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .pie i{
+        color: white;
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .fab{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__p{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .redes__posicion{
+        text-align: center;
+    }
+
+    .footerDerechos{
+        margin-bottom:0px;
+    }
+
+    .footer__ul{
+        width: 190px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        padding-left:0px;
+    }
+
     /* fin contacto */
     /* estadísticas */
     
     .headerEst{
         width: 100%;
         height: auto;
-        background-color: rgb(15,51,134);
+        background:url(../img-publicidades/abstract.jpg);
     }
 
     .headerEst h1{
@@ -2132,110 +3307,101 @@
         background-color: #efefef;
     }
 
-    .pieEst{
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(15, 51, 134);
-        width: 100%;
+    .pie{
+        background: url(../img-publicidades/abstract.jpg) no-repeat;
+        background-size: cover;
         color: white;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .pieEst footer ul{
-        display: flex;
+        width: 100vw;
+        margin-top:2em;
+        margin-bottom: 0px;
     }
 
-    .pieEst footer i{
-        font-size: 50px;
+    .text-footer{
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto,arial,sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .pie i{
         color: white;
-        padding: 10px;
-    } 
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .fab{
+        font-size: 12px;
+        width: 50px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__p{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+
+    .redes__posicion{
+        text-align: center;
+    }
+
+    .footerDerechos{
+        margin-bottom:0px;
+    }
+
+    .footer__ul{
+        width: 190px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        padding-left:0px;
+    }
     /* fin estadísticas */
 
     /* sección paises */
 
-    .gridPaises{
-        display: grid;
-        grid-template-areas:
-        'header header'
-        'main main'
-        'footer footer'
-        ;
+    .pais__redondo{
+        width: 100px;
+        height: 100px;
     }
 
-    .headerPaises{
-        grid-area:header;
+    .pais__nombre{
+        font-family: Ubuntu,arial,sans-serif;
+        font-size:80px;
+        font-weight:100;
     }
 
-    .mainPaises{
-        grid-area:main;
-    }
-
-    .footPaises{
-        grid-area:footer;
-    }
-
-
-    .headerPaises{
-        widows: 100%;
-        height: 120px;
-        background-image: linear-gradient( 135deg,  rgba(15,51,134,1) 0%, rgba(20,72,140,1) 90% ) ;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .flexPaises{
-        display: flex;
-        flex-direction: row;
-        width:800px;
+    .pais__escudo{
+        width: 300px;
         height: auto;
-        justify-content: space-between;
-        margin: auto;
-        align-items: center;
-    }
-
-    .navPaises__ul{
-        display: flex;
-    }
-
-    .navPaises__a{
-        color: white;
-        padding:10px;
-        font-size: 18px;
-        font-family: Roboto, arial,sans-serif;
-    }
-
-    .headerPaises ul{
-        display: flex;
-        justify-content: center;
-    }
-
-    .headerPaises ul li a{
-        color: white;
-        padding: 10px;
-        font-family: Roboto,arial,sans-serif;
-        font-size: 18px;
-    }
-
-    .navPSecundario__a:hover{
-        background-color: rgb(10, 38, 116);
-        color: white;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-
-    .navPaises__a:hover{
-        background-color: rgb(10, 38, 116);
-        color: white;
-        border-radius: 4px;
-        transition: 0.2s;
-    }
-
-    .navPSecundario__ul{
         position: relative;
-        bottom: 10px;
+        bottom: 35px;
+    }
+
+    .pais__img{
+        width: 580px;
+        height: auto;
+    }
+
+    .pais__p{
+        font-family: Roboto,arial,sans-serif;
+        font-size:18px;
+        font-weight: 400;
+    }
+
+    .pais__players--bg{
+        width:1080px;
+        height:1080px;
     }
 
     .headerPaises h1{
@@ -2451,58 +3617,339 @@
     }
 }
 
-
-@media only screen and (max-width:992px){
-    .table__th--size{
-        font-size: 12px;
+@media only screen and (min-width:992px) and (max-width:1155px){
+    .main__size{
+        width: 992px;
+        margin-left:auto;
+        margin-right: auto;
+        background-color: white;
     }
 
-    .table__td--size{
-        font-size: 12px;
+    .principal__div--propiedades{
+        width: 476px;
+        height: 298px;
+    }
+
+    .principal__img{
+        width: 500px;
+        height: 300px;
+    }
+
+    .principal__titulo{
+        font-size: 30px;
+    }
+
+    .galeria__background{
+        background-image:url(../img-publicidades/abstract.jpg);
+        background-size: cover;
+        width: 992px;
+        height: 572px;
+    }
+
+    .videos__video{
+        width: 560px;
+    }
+
+    .videoPrincipal{
+        width: 560px;
+    }
+
+    .videos__sugerencias{
+        width: 182px;
+    }
+
+    .videos__sugerencias--p{
+        width: 560px;
+    }
+
+    .videos__goles{
+        width: 397px;
+    }
+
+    .videoSecundario{
+        width:194px;
+        height: 100px;
+    }
+
+    .over__flow{
+        overflow: auto;
+    }
+
+    .horizontal__img{
+        width: 280px;
+    }
+
+    .horizontal__div--propiedades{
+        width: 270px;
+      }
+
+    .horizontal__pais{
+        font-size: 10px;
+    }
+
+    .horizontal__titulo{
+        font-size: 16px;
+    }
+
+    .horizontal__redaccion{
+        font-size: 10px;
+        margin:0px;
+    }
+
+    .rectanguloBig{
+        width: 496px;
+    }
+
+    .cardXs{
+        width: 162px;
+    }
+
+    .progreso1{  
+        position: relative;
+        top:54px;
+        left: 32px;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+    }
+
+    /* paises */
+
+    .pais__img{
+        width: 490px;
+        height: auto;
+    }
+
+    .pais__p{
+        font-size: 14px;
+    }
+
+    
+    .pais__players--bg{
+        width:100vw;
+        height:auto;
     }
 
 }
-
-@media only screen and (min-width: 1200px){
-    .sPrincipal{
-        width: 1200px; 
-        margin:auto;
-    }
-
-}
-
 
 @media only screen and (min-width:768px) and (max-width:992px){
-    .publicidades2{
-        width: 180px;
-        height: auto;
+    .main__size{
+        width:768px;
     }
 
-    .card__resaltante--img{
+    .principal__div--propiedades{
         width: 360px;
+        height: 298px;
     }
-}
 
-@media only screen and (min-width:992px) and (max-width:1200px){
-    .publicidades2{
-        width: 240px;
+    .principal__img{
+        width: 380px;
+        height: 300px;
+    }
+    .principal__titulo{
+        font-size:24px;
+    }
+
+    .principal__bajada{
+        font-size: 16px;
+    }
+
+    // .rectangulo{
+    //     width: 240px;
+    // }
+
+    // .img__card{
+    //     width: 240px;
+    // }
+
+    .galeria__background{
+        background-image:url(../img-publicidades/abstract.jpg);
+        background-size: cover;
+        width: 760px;
+        height: 572px;
+    }
+
+    .videos__video{
+        width: 427px ;
+    }
+
+    .videoPrincipal{
+        width: 427px;
+    }
+
+    .videos__sugerencias--p{
+        width: 427px ;
+    }
+
+    .videos__sugerencias{
+        width: 139px;
+    }
+
+    .videos__goles{
+        width: 295px;
+    }
+
+    .videoSecundario{
+        width: 145px;
+    }
+    
+    .horizontal__img{
+        width: 384px;
+        height: 201px;
+    }
+
+    .horizontal__div--propiedades{
+        width: 382px;
+        height: 210px;
+    }
+
+    .horizontal__pais{
+        font-size: 10px;
+    }
+
+    .horizontal__titulo{
+        font-size:24px;
+    }
+
+    .horizontal__bajada{
+        font-size: 14px;
+    }
+
+    .horizontal__redaccion{
+        font-size: 10px;
+        margin: 0px;
+    }
+
+    .rectanguloBig{
+        width: 768px;
+        height: 770px;
+        margin-top:32px;
+    }
+
+    .rectanguloSmall{
+        margin-bottom: 2rem;
+    }
+
+    .progreso1{  
+        position: relative;
+        top:54px;
+        left: 32px;
+    }
+
+    .publicidad__fibertel{
+        width: 320px;
+        height: 337px;
+        background-image: url(../img-publicidades/fibertel.jpg);
+        background-size: cover;
+    }
+
+    .footer{
+        padding-left:8px;
+        font-size: 16px;
+        font-family: Roboto,arial,serif;
+        width: 100%;
+        margin:0 auto;
+        padding: 16px;
+    }
+
+     /* paises */
+
+     .pais__img{
+        width: 100%;
         height: auto;
     }
+
+    .pais__p{
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    
+    .pais__players--bg{
+        width:100vw;
+        height:auto;
+    }
+
+
 }
- 
-@media only screen and (min-width:1200px) and(max-width:1400px){
-    .publicidades2{
-        width: 285px;
-        height: 580px;
+
+@media only screen and (max-width:768px){
+    .main__size{
+        width: 100vw;
     }
 
 }
 
-@media only screen and (min-width:1400px){
-    .publicidades2{
-        width: 330px;
-        height: 580px;
+@media only screen and (max-width:576px){
+    
+    .rectangulo{
+        margin-bottom:16px;
+        height: auto;
+    }
+    
+    .rectanguloBig{
+        width: 100%;
     }
 
+    .votacion{
+        display: none;
+    }
+
+    .publicidad__fibertel{
+        display:none;
+    }
+
+    .horizontal__div--propiedades{
+        display: none;
+    }
+
+    .horizontal__img{
+        display: none;
+    }
+
+    .lomasleido__borde{
+        display: none;
+    }
+
+    // pais
+
+    .pais__nombre{
+        font-family: Ubuntu,arial,sans-serif;
+        font-size:40px;
+        font-weight:100;
+        position: relative;
+        top: 15px;
+    }
+
+    .pais__escudo{
+        display: none;
+    }
+
+    .pais__redondo{
+        width: 100px;
+        height: 100px;
+    }
+
+     .pais__img{
+        width: 100%;
+        height: auto;
+    }
+
+    .pais__p{
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    
+    .pais__players--bg{
+        width:100vw;
+        height:auto;
+    }
 
 }
