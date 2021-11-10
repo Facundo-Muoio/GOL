@@ -533,6 +533,8 @@
     font-weight: 300;
     height: 40px;
     transition: 0.5s; }
+  .inputRestablecer {
+    padding-left: 10px; }
   input:hover {
     border: 1px solid #1048b2; }
   .butRes {
@@ -557,6 +559,13 @@
     color: #1048b2; }
   .restablecerText {
     font-family: Roboto,arial,sans-serif; }
+  .restablecerFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
   /* fin restablecer */
   /* Suscribirse */
   .headerSuscripción {
@@ -1795,6 +1804,8 @@
     transition: 0.5s; }
   input:hover {
     border: 1px solid #1048b2; }
+  .inputRestablecer {
+    padding-left: 10px; }
   .butRes {
     width: 100%;
     border: 1px solid #1048b2;
@@ -1818,6 +1829,13 @@
     text-decoration: none; }
   .restablecerText {
     font-family: Roboto,arial,sans-serif; }
+  .restablecerFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
   /* fin restablecer */
   /* Suscribirse */
   .headerSuscripción {

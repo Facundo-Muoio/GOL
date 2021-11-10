@@ -815,6 +815,10 @@
         height: 40px;
         transition: 0.5s;
       }
+
+      .inputRestablecer{
+          padding-left: 10px;
+      }
   
       input:hover{
         border: 1px solid #1048b2;
@@ -854,7 +858,16 @@
       .restablecerText{
           font-family: Roboto,arial,sans-serif;
       } 
-  
+
+      .restablecerFallido{
+        color:red;
+        margin:0px;
+        margin-left: 4px;
+        font-size: 12px;
+        text-align: left;
+        display: none;
+    }
+
       /* fin restablecer */
 
       /* Suscribirse */
@@ -2686,6 +2699,10 @@
     input:hover{
         border: 1px solid #1048b2;
     }
+    
+    .inputRestablecer{
+        padding-left: 10px;
+    }
 
     .butRes{
         width:100%;
@@ -2721,6 +2738,15 @@
     .restablecerText{
         font-family: Roboto,arial,sans-serif;
     } 
+
+    .restablecerFallido{
+        color:red;
+        margin:0px;
+        margin-left: 4px;
+        font-size: 12px;
+        text-align: left;
+        display: none;
+    }
 
     /* fin restablecer */
 

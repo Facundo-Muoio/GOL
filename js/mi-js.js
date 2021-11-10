@@ -1,6 +1,4 @@
-
-//REGISTRO USUARIO
-
+// VARIABLES
 
 // captura el valor que ingresa el usuario en el input de email del form de inicio de sesion
 let inicioEmail;
@@ -14,8 +12,17 @@ let usuarioEmail;
 // captura el valor que ingresa el usuario en el input de password del form de registro
 let usuarioPassword;
 
+// variable utilzada para guardar valor booleno que posteriormente se utiliza para chequear el registro del usuario.
 let email;
+
+// variable utilzada para guardar valor booleno que posteriormente se utiliza para chequear el registro del usuario.
 let password;
+
+// variable utilizado como almacenar boolenao que se utiliza después para el condicional usado para restablecer contraseña.
+let restablecer
+
+// array donde se almacenan los usuarios registrados traidos del localStorage. La segunda línea comentada se utilza descomentado la primera vez q se inicia el programa para guardar en el local un array de usuarios, 
+// luego se comenta esa línea ya que sino permanentemente el array se modificaria borrando los usuarios ya usuarios usuarios registrados.
 const usuariosRegistrados = JSON.parse(localStorage.getItem("Usuario Email"));
 // const usuariosRegistrados = [{email:"prueba@gmail.com", password:"Coder2020"}];
 
@@ -24,6 +31,46 @@ let emailValidacion = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9.-]+$/;
 
 // expresiones regulares para la contraseña de registro, la misma debe tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
 let passwordValidacion = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/;
+
+
+// FUNCTIONS
+function buscar(user){
+    if(user.email === inicioEmail && user.password === inicioPassword){
+        return true;
+    } return false;
+}
+
+function ingreso(succes){
+    if(succes !== undefined){
+        $(".inicioFallido").hide();
+        $("#inputEmail , #inputPsw").css({
+            "border": "1px solid black"
+        });
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Usted inició sesión exitosamente',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        setTimeout(redireccionar,2000);
+    } else{
+        $(".inicioFallido").show();
+        $("#inputEmail, #inputPsw").css({
+            "border": "1px solid red"
+        })
+    }
+}  
+
+function redireccionar() {
+    window.location.href = "../index.html"
+}
+
+function redireccionarLogin() {
+    window.location.href = "ingresar.html"
+}
+
+//REGISTRO USUARIO
 
 
 // obtiene el valor del input de email, luego con un find busca si este primer valor coincide con alguno guardado en el array de nuestro local Storage. En caso de encontrar una coincidencia imprime
@@ -105,7 +152,8 @@ $("#registrarme").click((e) =>{
             showConfirmButton: false,
             timer: 2000
         })
-        formRegistro.reset();   
+        formRegistro.reset();
+        setTimeout(redireccionarLogin,2000);  
     }
     else{
         $(".registroFallido").show();
@@ -131,7 +179,9 @@ $("#inputPsw").change((e) => {
 
 // cuando damos click en el boton de inicio de sesion, se guarda en la variable succes el valor que resulta del método find aplicado al array usuariosRegistrados que traemos del localStorage y donde se guardan
 // los usuarios registrados. dentro del find tenemos otra función buscar, la cual itera nuestro array verificando si existe algún objeto que tenga el usuario y contraseña coincidentes con los ingresados. En caso positivo retorna true
-// y por lo contrario false.
+// y por lo contrario false. Este valor es tomado por find y en caso de ser true devuelve los valores encontrados, si es false nuestro find devuelve undefined. Por último se ejecuta la función ingreso que chequea el valor de nuesro find
+// , si es distinto a undefined se ocultan los mensajes de ingreso fallido y muestra un modal avisando que el usuario inició sesión correctamente, por último se lo redirecciona cliente a nuestro mediante la función redireccionar index. En caso de ser undefined se muestra un texto de
+// inicio fallido.
 
 $("#inicioSesion").click((e) => {
     e.preventDefault();
@@ -140,35 +190,45 @@ $("#inicioSesion").click((e) => {
 } );
 
 
-function buscar(user){
-    if(user.email === inicioEmail && user.password === inicioPassword){
-        return true;
-    } return false;
-}
+// dasjlf obtenemos el valor del input email y lo guardamos en usuarioRegistrado, luego usamos un find en el array de los usuarios ya registrados en busca de un usuario que tenga el mail ingresado, si se enceuntra coincidencia
+// se guarda en restablecer true para ser utilizado mas adelante en el evento de click en el button de restablecer. Sino se encuentra un email guardado igaul al ingresado en el input se muestra con el show el mensaje de email no registrado y 
+// se guarda restablecer false
 
-function ingreso(succes){
-    if(succes !== undefined){
-        $(".inicioFallido").hide();
-        $("#inputEmail , #inputPsw").css({
+$(".inputRestablecer").change((e) => {
+    let usuarioRegistrado = e.target.value;
+    let yaRegistrado = usuariosRegistrados.find(usuario => usuario.email === usuarioRegistrado);
+    if(yaRegistrado !== undefined){
+        $(".restablecerFallido").hide();
+        $(".inputRestablecer").css({
             "border": "1px solid black"
         });
-        Swal.fire({
-            position: 'center',
-            icon: 'success',
-            title: 'Usted inició sesión exitosamente',
-            showConfirmButton: false,
-            timer: 2000
-        });
-        setTimeout(redireccionar,2000);
+        restablecer = true
     } else{
-        $(".inicioFallido").show();
-        $("#inputEmail, #inputPsw").css({
+        $(".restablecerFallido").show();
+        $(".inputRestablecer").css({
             "border": "1px solid red"
-        })
+        });
+        restablecer = false
     }
-}  
+})
 
-function redireccionar() {
-    window.location.href = "../index.html"
-}
+// al hacer click en el boton de continuar se dispara el evento dentra del cual se evalua nuestra condicion, si restablecer es true se muestra un modal avisando al usuario que revise su casilla para restablecer su contraseña
+// y se resetea el form. Por otra parte si restablecer no es true el boton no notifica nada
+$("#restablecer").click((e) =>{
+    e.preventDefault();
+    if(restablecer === true){
+        Swal.fire({
+            title: 'En su casilla de correo electrónico encontrara las indicaciones para restablecer su contraseña. ',
+            iconColor: 'blue',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+        })
+        formRestablecer.reset()
+    }
+})
+
 
