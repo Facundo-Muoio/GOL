@@ -5,7 +5,7 @@
   padding: 0; }
 
 .dropdown__ul--bg {
-  background-color: #0e3386; }
+  background-color: #fafafa; }
 
 .dropdown-item {
   color: white; }
@@ -74,6 +74,19 @@
     margin-right: 10px; }
   .nav-link {
     font-size: 14px; }
+  .btnUser {
+    font-size: 14px;
+    padding: 5px 5px; }
+  .btnCerrarSesion {
+    font-family: Roboto slab, arial, serif;
+    font-size: 12px;
+    border: none;
+    padding-left: 8px;
+    background-color: #fafafa; }
+  .fa-sign-out-alt {
+    margin-right: 12px;
+    position: relative;
+    left: 4px; }
   .bg {
     background-color: #0f3386; }
   .tsize {
@@ -402,12 +415,14 @@
   .form__button--propiedades {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px; }
-  .fa-facebook-f {
-    color: #1048b2;
-    margin-right: 10px; }
-  .fa-google {
-    color: #00b4ff;
-    margin-right: 10px; }
+  .inicioFallido {
+    color: red;
+    margin: 0px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  #inputEmail, #inputPsw {
+    padding: 5px; }
   /* registrarse */
   div.contenedor {
     width: 100vw;
@@ -448,17 +463,47 @@
     transition: 0.5s; }
   input:hover {
     border: 1px solid #1048b2; }
-  .registrarme {
+  .btnRegistrarme {
     border: 1px solid #1048b2;
     background-color: #1048b2;
     color: white;
     padding: 5px 12px; }
-  .fa-facebook-f {
-    color: #1048b2;
-    margin-right: 10px; }
-  .fa-google {
-    color: #00b4ff;
-    margin-right: 10px; }
+  #registroEmail, #registroPsw {
+    padding: 5px; }
+  #registroPsw {
+    margin-top: 16px; }
+  .registroFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .emailFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .emailNoValido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .pswFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .fa-exclamation-triangle {
+    color: red;
+    margin-right: 5px;
+    font-size: 12px; }
   a.registrarse {
     text-decoration: none;
     color: #00b4ff; }
@@ -1037,6 +1082,30 @@
     border-radius: 4px; }
   .nav-item a {
     font-size: 20px; }
+  .btnUser {
+    padding: 7px 5px;
+    display: none; }
+  .btnCerrarSesion {
+    font-family: Roboto slab, arial, serif;
+    font-size: 1em;
+    border: none;
+    padding-left: 2px; }
+  .fa-sign-out-alt {
+    margin: 0px;
+    position: relative;
+    left: 4px; }
+  .dropdown-container {
+    position: relative; }
+  .dropdown-container ul {
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+    list-style-type: none; }
+  .dropdown-container ul li {
+    padding: 10px; }
+  .dropdown-container ul.show {
+    max-height: 65px; }
   .escudo__size {
     width: auto;
     height: 50px;
@@ -1065,6 +1134,11 @@
     font-size: 40px; }
   .fas {
     margin-right: 10px; }
+  .fa-chevron-down {
+    font-size: 16px;
+    margin-left: 4px; }
+  .userNav:active {
+    color: white; }
   .main__size {
     width: 1155px;
     margin: 0 auto;
@@ -1475,7 +1549,7 @@
     align-items: center; }
   div.inicioSesión {
     width: 400px;
-    height: 800px;
+    height: auto;
     background-color: white;
     padding: 20px;
     margin: auto;
@@ -1579,12 +1653,14 @@
   button {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px; }
-  .fa-facebook-f {
-    color: #1048b2;
-    margin-right: 10px; }
-  .fa-google {
-    color: #00b4ff;
-    margin-right: 10px; }
+  .inicioFallido {
+    color: red;
+    margin: 0px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  #inputEmail, #inputPsw {
+    padding: 5px; }
   /* <!-- Fin inicio sesión css --> */
   /* registrarse */
   .fondoRegistrar {
@@ -1598,7 +1674,7 @@
     align-items: center; }
   div.contenedor {
     width: 400px;
-    height: 700px;
+    height: auto;
     background-color: white;
     border-radius: 4px;
     margin: auto;
@@ -1635,17 +1711,47 @@
     transition: 0.5s; }
   input:hover {
     border: 1px solid #1048b2; }
-  .registrarme {
+  .btnRegistrarme {
     border: 1px solid #1048b2;
     background-color: #1048b2;
     color: white;
     padding: 5px 12px; }
-  .fa-facebook-f {
-    color: #1048b2;
-    margin-right: 10px; }
-  .fa-google {
-    color: #00b4ff;
-    margin-right: 10px; }
+  #registroEmail, #registroPsw {
+    padding: 5px; }
+  #registroPsw {
+    margin-top: 16px; }
+  .registroFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .emailFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .emailNoValido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .pswFallido {
+    color: red;
+    margin: 0px;
+    margin-left: 4px;
+    font-size: 12px;
+    text-align: left;
+    display: none; }
+  .fa-exclamation-triangle {
+    color: red;
+    margin-right: 5px;
+    font-size: 12px; }
   a.registrarse {
     text-decoration: none;
     color: #00b4ff; }
@@ -2566,7 +2672,12 @@
 
 @media only screen and (max-width: 768px) {
   .main__size {
-    width: 100vw; } }
+    width: 100vw; }
+  .dropdown-item {
+    text-align: center; }
+  .btnUser {
+    padding: 7px 5px;
+    display: none; } }
 
 @media only screen and (max-width: 576px) {
   .rectangulo {
@@ -2584,6 +2695,11 @@
     display: none; }
   .lomasleido__borde {
     display: none; }
+  .btnUser {
+    font-size: 14px;
+    padding: 0px; }
+  .dropdown-menu {
+    width: 50px; }
   .pais__nombre {
     font-family: Ubuntu,arial,sans-serif;
     font-size: 40px;
