@@ -31,14 +31,14 @@
 	</div>	
 	<div class="contenedorCon">
 		<div class="formCon">
-			<form>
-				<input type="text" placeholder="Nombre"><br><br>
-				<input type="text"placeholder="Apellido"><br><br>
-				<input type="tel" placeholder="Teléfono"><br><br>
-				<input class="emailCon" type="email" placeholder="Email *"><br><br>
-				<textarea class="textareaCon" cols="60" rows="15">
+			<form id="formularioContacto">
+				</i><input id="nombreContacto" type="text" placeholder="Nombre" required><br><br>
+				<input id="apellidoContacto" type="text"placeholder="Apellido" required><br><br>
+				<input id="telContacto" type="tel" placeholder="Teléfono" required><br><br>
+				<input id="emailContacto" class="emailCon" type="email" placeholder="Email *" required><br><br>
+				<textarea id="mensajeContacto" class="textareaCon" cols="60" rows="15" required>
 				</textarea>
-				<input class="sendCon" type="submit" value="Enviar">
+				<input id="btnEnviarContacto" class="sendCon" type="submit" value="Enviar">
  			</form>
 		</div>
 		<div class="infoCon">
@@ -79,5 +79,10 @@
 		</footer>
 	</div>
 	<!--cierre footer-->
+	<!-- Inicio scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="/js/mi-js.js"></script>
+	<!-- Fin scripts -->
 </body>
 </html>

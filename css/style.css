@@ -33,7 +33,7 @@
   .dropdown__li--display {
     display: none; }
   .mainNav__div--width {
-    width: 780px;
+    width: 764px;
     padding-right: 0px;
     padding-left: 0px; } }
 
@@ -44,7 +44,9 @@
 @media only screen and (max-width: 992px) {
   .navSecundary__a--fontsize {
     font-size: 16px;
-    padding: 8px 6px; } }
+    padding: 8px 6px; }
+  .mainNav__div--width {
+    width: 586px; } }
 
 /* mobile first */
 @media only screen and (max-width: 768px) {

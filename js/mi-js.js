@@ -21,10 +21,12 @@ let password;
 // variable utilizado como almacenar boolenao que se utiliza después para el condicional usado para restablecer contraseña.
 let restablecer
 
-// array donde se almacenan los usuarios registrados traidos del localStorage. La segunda línea comentada se utilza descomentado la primera vez q se inicia el programa para guardar en el local un array de usuarios, 
-// luego se comenta esa línea ya que sino permanentemente el array se modificaria borrando los usuarios ya usuarios usuarios registrados.
+// array donde se almacenan los usuarios registrados traidos del localStorage. Primero comentar la linea 26 para que no tire error. La línea 27 se utilza descomentada la primera vez q se inicia el programa para guardar en el local un array de usuarios, 
+// luego se comenta esa línea ya que sino permanentemente el array se modificaria borrando los usuarios registrados. Con la línea 26 comentada y la 27 descomentada ir y registrarse . Una vez registrado tu usuario comentar la 27 y descomentar la 26. Ahora ir 
+// a inicio de sesión y liso el programa funcionara. Esto se hace una sola vez de manera local para que te quede guardado el localstorage como almacenamiento de los usuarios que se registren.
 const usuariosRegistrados = JSON.parse(localStorage.getItem("Usuario Email"));
 // const usuariosRegistrados = [{email:"prueba@gmail.com", password:"Coder2020"}];
+
 
 // expresiones regulares para el email de registro, el mismo solo puede contar con numeros, guiones y puntos
 let emailValidacion = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9.-]+$/;
@@ -232,3 +234,43 @@ $("#restablecer").click((e) =>{
 })
 
 
+// CONTACTO
+
+// Variables en donde se guarda lo que ingresa el usuario para contactarse
+let nombreContacto 
+let apellidoContacto 
+let telContacto 
+let emailContacto  
+let mensajeContacto  
+
+// Almacenamos los valores en las variables ya declaradas anteriormente
+$("#nombreContacto").change((e) => {
+    nombreContacto = e.target.value;
+})
+
+$("#apellidoContacto").change((e) => {
+    apellidoContacto = e.target.value;
+})
+
+$("#telContacto").change((e) => {
+    telContacto = e.target.value;
+})
+
+$("#emailContacto").change((e) => {
+    emailContacto = e.target.value;
+})
+
+$("#mensajeContacto").change((e) => {
+    mensajeContacto = e.target.value;
+})
+
+
+
+// Al ejecutar el evento click guardamos estos datos en un storage que simula nuestro backend y le avisamos al usuario que su mensaje fue enviado
+$("#btnEnviarContacto").click((e) => {
+    e.preventDefault();
+    const contacto = [{nombre: nombreContacto, apellido: apellidoContacto, telefono: telContacto, email:emailContacto, mesaje: mensajeContacto}];
+    localStorage.setItem("Datos contacto", JSON.stringify(contacto));
+    formularioContacto.reset()
+    Swal.fire('En brevedad sera contactado por nuestro departamentento de atención al cliente. Gracias!')
+})
